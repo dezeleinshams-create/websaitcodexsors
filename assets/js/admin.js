@@ -1,6 +1,11 @@
 /**
- * CODEXSORS — Admin Leads Management Logic
+ * CODEXSORS — Admin Leads Management Logic (Cloud-Synced with Supabase)
  */
+
+const SUPABASE_CONFIG = {
+  url: "https://zyyivzdhkdphlwxansfw.supabase.co",
+  anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5eWl2emRoa2RwaGx3eGFuc2Z3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMzAxNzYsImV4cCI6MjA4NDYwNjE3Nn0.RFrDtRp7l0llttRtAQnsVJDwFHVAVj_NqHzE_XskSxo"
+};
 
 const AdminApp = {
   AUTH_HASH: '78df750a1cbd1ecd21be4e539e4c98d420412ba743b9eb1bed39fbbd7199912b',
@@ -50,15 +55,43 @@ const AdminApp = {
     this.loadLeads();
   },
 
-  loadLeads() {
+  async loadLeads() {
+    try {
+      const res = await fetch(`${SUPABASE_CONFIG.url}/rest/v1/leads?select=*&order=created_at.desc`, {
+        headers: {
+          'apikey': SUPABASE_CONFIG.anonKey,
+          'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`
+        }
+      });
+      if (res.ok) {
+        const cloudLeads = await res.json();
+        this.currentLeads = cloudLeads.map(l => ({
+          id: l.id,
+          date: l.created_at,
+          name: l.name,
+          phone: l.phone,
+          service: l.service,
+          budget: l.budget,
+          details: l.details,
+          status: l.status || 'new'
+        }));
+      } else {
+        this.loadLeadsFromLocal();
+      }
+    } catch (e) {
+      console.warn('Could not load from cloud, loading from local:', e);
+      this.loadLeadsFromLocal();
+    }
+    this.render();
+  },
+
+  loadLeadsFromLocal() {
     try {
       const data = localStorage.getItem(this.STORAGE_KEY);
       this.currentLeads = data ? JSON.parse(data) : [];
     } catch (e) {
-      console.error(e);
       this.currentLeads = [];
     }
-    this.render();
   },
 
   saveLeads() {
@@ -117,7 +150,7 @@ const AdminApp = {
       });
 
       // Clean phone number for WhatsApp
-      let cleanPhone = lead.phone.replace(/[^0-9]/g, '');
+      let cleanPhone = (lead.phone || '').replace(/[^0-9]/g, '');
       if (cleanPhone.startsWith('05')) {
         cleanPhone = '966' + cleanPhone.substring(1);
       } else if (cleanPhone.startsWith('5')) {
@@ -162,25 +195,50 @@ const AdminApp = {
     }).join('');
   },
 
-  updateStatus(id, newStatus) {
+  async updateStatus(id, newStatus) {
     const lead = this.currentLeads.find(l => l.id === id);
     if (lead) {
       lead.status = newStatus;
-      this.saveLeads();
+      this.render();
+      try {
+        await fetch(`${SUPABASE_CONFIG.url}/rest/v1/leads?id=eq.${id}`, {
+          method: 'PATCH',
+          headers: {
+            'apikey': SUPABASE_CONFIG.anonKey,
+            'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ status: newStatus })
+        });
+      } catch (e) {
+        console.error('Update status failed:', e);
+      }
     }
   },
 
-  deleteLead(id) {
+  async deleteLead(id) {
     if (confirm('هل أنت متأكد من حذف هذا الطلب؟')) {
       this.currentLeads = this.currentLeads.filter(l => l.id !== id);
-      this.saveLeads();
+      this.render();
+      try {
+        await fetch(`${SUPABASE_CONFIG.url}/rest/v1/leads?id=eq.${id}`, {
+          method: 'DELETE',
+          headers: {
+            'apikey': SUPABASE_CONFIG.anonKey,
+            'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`
+          }
+        });
+      } catch (e) {
+        console.error('Delete failed:', e);
+      }
     }
   },
 
-  clearAll() {
+  async clearAll() {
     if (confirm('تنبيه: هل أنت متأكد من مسح جميع الطلبات؟')) {
       this.currentLeads = [];
-      this.saveLeads();
+      this.render();
+      localStorage.removeItem(this.STORAGE_KEY);
     }
   },
 
@@ -211,6 +269,7 @@ const AdminApp = {
     document.getElementById('adminStatusFilter')?.addEventListener('change', () => this.renderTable());
     document.getElementById('btnClearAllLeads')?.addEventListener('click', () => this.clearAll());
     document.getElementById('btnExportCSV')?.addEventListener('click', () => this.exportCSV());
+    document.getElementById('btnRefreshLeads')?.addEventListener('click', () => this.loadLeads());
   }
 };
 

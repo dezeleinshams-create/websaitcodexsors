@@ -10,6 +10,11 @@ const CODEXSORS_CONFIG = {
   officialWebsite: "codexsors.com"
 };
 
+const SUPABASE_CONFIG = {
+  url: "https://zyyivzdhkdphlwxansfw.supabase.co",
+  anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5eWl2emRoa2RwaGx3eGFuc2Z3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMzAxNzYsImV4cCI6MjA4NDYwNjE3Nn0.RFrDtRp7l0llttRtAQnsVJDwFHVAVj_NqHzE_XskSxo"
+};
+
 // ==========================================================================
 // WhatsApp Direct Message Builder
 // ==========================================================================
@@ -221,7 +226,7 @@ const QuoteModal = {
 };
 
 // ==========================================================================
-// Lead Management & Local Storage Persistence
+// Lead Management & Cloud Persistence (Supabase + Local Fallback)
 // ==========================================================================
 const LeadManager = {
   STORAGE_KEY: 'codexsors_leads',
@@ -236,17 +241,41 @@ const LeadManager = {
     }
   },
 
-  saveLead(lead) {
+  async saveLead(lead) {
     const leads = this.getLeads();
-    const newLead = {
+    const localLead = {
       id: 'LEAD-' + Date.now().toString(36).toUpperCase(),
       date: new Date().toISOString(),
       status: 'new', // new, contacted, in_progress, closed
       ...lead
     };
-    leads.unshift(newLead);
+    leads.unshift(localLead);
     localStorage.setItem(this.STORAGE_KEY, JSON.stringify(leads));
-    return newLead;
+
+    // Real-time Cloud Save via Supabase REST API
+    try {
+      await fetch(`${SUPABASE_CONFIG.url}/rest/v1/leads`, {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_CONFIG.anonKey,
+          'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({
+          name: lead.name,
+          phone: lead.phone,
+          service: lead.service,
+          budget: lead.budget,
+          details: lead.details,
+          status: 'new'
+        })
+      });
+    } catch (err) {
+      console.warn('Cloud sync error, saved locally:', err);
+    }
+
+    return localLead;
   }
 };
 
@@ -257,15 +286,15 @@ function setupForms() {
   // Main Contact Form
   const mainForm = document.getElementById('mainContactForm');
   if (mainForm) {
-    mainForm.addEventListener('submit', (e) => {
+    mainForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      handleFormSubmit(mainForm, false);
+      await handleFormSubmit(mainForm, false);
     });
 
     const waBtn = document.getElementById('mainFormWhatsAppBtn');
     if (waBtn) {
-      waBtn.addEventListener('click', () => {
-        handleFormSubmit(mainForm, true);
+      waBtn.addEventListener('click', async () => {
+        await handleFormSubmit(mainForm, true);
       });
     }
   }
@@ -273,21 +302,21 @@ function setupForms() {
   // Modal Form
   const modalForm = document.getElementById('modalQuoteForm');
   if (modalForm) {
-    modalForm.addEventListener('submit', (e) => {
+    modalForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      handleFormSubmit(modalForm, false, true);
+      await handleFormSubmit(modalForm, false, true);
     });
 
     const modalWaBtn = document.getElementById('modalFormWhatsAppBtn');
     if (modalWaBtn) {
-      modalWaBtn.addEventListener('click', () => {
-        handleFormSubmit(modalForm, true, true);
+      modalWaBtn.addEventListener('click', async () => {
+        await handleFormSubmit(modalForm, true, true);
       });
     }
   }
 }
 
-function handleFormSubmit(form, sendViaWhatsApp = false, isModal = false) {
+async function handleFormSubmit(form, sendViaWhatsApp = false, isModal = false) {
   const name = form.querySelector('[name="client_name"]')?.value.trim();
   const phone = form.querySelector('[name="client_phone"]')?.value.trim();
   const service = form.querySelector('[name="client_service"]')?.value || 'عام';
@@ -299,8 +328,8 @@ function handleFormSubmit(form, sendViaWhatsApp = false, isModal = false) {
     return;
   }
 
-  // Save to local storage for Admin Dashboard
-  LeadManager.saveLead({
+  // Save to Supabase Cloud Database + local storage
+  await LeadManager.saveLead({
     name,
     phone,
     service,

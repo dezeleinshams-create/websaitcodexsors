@@ -45,18 +45,21 @@
 </head>
 <body class="page-home">
 
-  <!-- Header & Navigation (Exact Site Snap Header Structure) -->
+  <!-- Top Navigation Header (Exact Site Snap Proportions - Zero Overlap on Mobile) -->
   <header class="site-header" id="siteHeader">
     <div class="header-inner">
+      
+      <!-- Brand Logo (Right on RTL) -->
       <a class="brand" href="#hero" aria-label="CODEXSORS">
-        <span style="display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.35rem; font-family: 'Space Grotesk', sans-serif;">
-          <span style="width: 34px; height: 34px; border-radius: 8px; background: var(--primary); display: flex; align-items: center; justify-content: center; color: #FFF; box-shadow: 0 0 15px rgba(255, 106, 26, 0.4);">
+        <span class="brand-text-logo">
+          <span class="brand-badge-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </span>
-          <span style="color: #FFF; letter-spacing: -0.01em;">CODEX<span style="color: var(--primary);">SORS</span></span>
+          <span>CODEX<span style="color: var(--primary);">SORS</span></span>
         </span>
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="nav" id="siteNav" aria-label="القائمة">
         <span class="nav-ind" aria-hidden="true"></span>
         <ul class="nav-list">
@@ -70,21 +73,25 @@
         </ul>
       </nav>
 
+      <!-- Header Controls (Left on RTL) -->
       <div class="header-actions">
-        <!-- Language Switcher -->
-        <button class="nav-link" id="langSwitcher" style="background: none; border: 1px solid var(--border); border-radius: var(--r-pill); padding: 6px 14px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 6px;" aria-label="تبديل اللغة">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          English
+        <!-- Language Switcher Pill -->
+        <button class="lang-pill-btn" id="langSwitcher" aria-label="تبديل اللغة">
+          <span class="active-lang">العربية</span>
+          <span>EN</span>
         </button>
 
-        <a class="btn btn--primary btn--sm open-quote-modal-btn" href="#contact" data-i18n="nav_cta">
+        <!-- Desktop Only CTA (Hidden on phones to prevent crowding) -->
+        <a class="btn btn--primary btn--sm header-cta-btn open-quote-modal-btn" href="#contact" data-i18n="nav_cta">
           طلب عرض سعر
         </a>
 
+        <!-- Hamburger Menu Button -->
         <button class="nav-toggle" id="navToggle" type="button" aria-label="القائمة" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
+
     </div>
   </header>
 
@@ -102,7 +109,8 @@
     <div class="container hero-inner">
       <div class="hero-layout">
         <div class="hero-content">
-          <p class="hero-badge"><i class="pulse"></i><span data-i18n="hero_badge">نستقبل مشاريع جديدة في المملكة العربية السعودية</span></p>
+          <!-- Compact Single-line Badge matching Site Snap -->
+          <p class="hero-badge"><i class="pulse"></i><span data-i18n="hero_badge">نستقبل مشاريع جديدة في السعودية</span></p>
 
           <h1 class="hero-title">
             <span class="line">مشروعك مش مجرد كود..</span>
@@ -110,38 +118,34 @@
           </h1>
 
           <p class="hero-lead" data-i18n="hero_subtitle">
-            CODEXSORS علامة متخصصة في تقديم الحلول والخدمات البرمجية للشركات، المتاجر، والمشروعات الناشئة. نبني منصاتك وتطبيقاتك بأعلى معايير الجودة والأمان وبما يلائم تطلعات السوق السعودي.
+            نصمم ونطوّر مواقع ومتاجر وتطبيقات وأنظمة سريعة، متجاوبة، ومهيأة لمحركات البحث — بهوية تعكس علامتك، وبأعلى معايير الأمان والسرعة في السوق السعودي.
           </p>
 
           <div class="hero-actions">
             <button class="btn btn--primary btn--lg open-quote-modal-btn">
-              <span data-i18n="hero_btn_quote">اطلب عرض سعر لمشروعك</span>
+              <span data-i18n="hero_btn_quote">ابدأ مشروعك</span>
               <svg class="icon icon--arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
             </button>
 
             <a class="btn btn--ghost btn--lg" href="https://wa.me/966542572634?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20CODEXSORS" target="_blank" rel="noopener noreferrer">
               <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-              <span data-i18n="hero_btn_whatsapp">محادثة فورية عبر واتساب</span>
+              <span data-i18n="hero_btn_whatsapp">تحدث معنا عبر واتساب</span>
             </a>
           </div>
 
-          <!-- Hero Proof Facts (Real Quality Metrics) -->
-          <div class="hero-facts">
-            <div class="hero-fact">
-              <span class="v" dir="ltr"><em></em>100<em>%</em></span>
-              <span class="l" data-i18n="hl_clean_code">كود مخصص ونظيف</span>
+          <!-- Hero Facts (Exact 3-Box Single Row Grid matching Site Snap) -->
+          <div class="hero-facts-row">
+            <div class="hero-fact-col">
+              <span class="fact-num" dir="ltr">100<em>%</em></span>
+              <span class="fact-lbl" data-i18n="hl_clean_code">كود مخصص ونظيف</span>
             </div>
-            <div class="hero-fact">
-              <span class="v" dir="ltr"><em></em>8<em></em></span>
-              <span class="l" data-i18n="services_title">خدمات رقمية متكاملة</span>
+            <div class="hero-fact-col">
+              <span class="fact-num" dir="ltr">8</span>
+              <span class="fact-lbl">خدمات متكاملة</span>
             </div>
-            <div class="hero-fact">
-              <span class="v" dir="ltr"><em></em>🇸🇦<em></em></span>
-              <span class="l" data-i18n="hl_saudi_market">مهيأ للسوق السعودي</span>
-            </div>
-            <div class="hero-fact">
-              <span class="v" dir="ltr"><em></em>24/7<em></em></span>
-              <span class="l" data-i18n="hl_support">دعم فني ومتابعة مستمرة</span>
+            <div class="hero-fact-col">
+              <span class="fact-num">🇸🇦</span>
+              <span class="fact-lbl" data-i18n="hl_saudi_market">السوق السعودي</span>
             </div>
           </div>
         </div>
@@ -198,7 +202,7 @@
     </div>
   </section>
 
-  <!-- Section 2: Services Grid (Exact Site Snap Services Section with our 8 Core Services) -->
+  <!-- Section 2: Services Grid (Exact Site Snap Services Grid with our 8 Core Services) -->
   <section class="section section--alt texture-grid" id="services">
     <span class="glow glow--orange" style="inset-inline-start:0;top:14%;width:min(48vw,420px);aspect-ratio:1"></span>
     <div class="container">
@@ -324,7 +328,7 @@
           </div>
         </div>
 
-        <!-- 05: Custom Software & Dashboards -->
+        <!-- 05: Custom Software -->
         <div class="svc-card" data-reveal data-reveal-group="4">
           <div class="svc-top">
             <span class="svc-icon">
@@ -440,7 +444,7 @@
     </div>
   </section>
 
-  <!-- Section 3: Interactive Project Scope Calculator (Matching Site Snap Aesthetic) -->
+  <!-- Section 3: Interactive Project Scope Calculator -->
   <section class="section texture-grid" id="calculator">
     <div class="container">
       <div class="sec-head sec-head--center" data-reveal>
@@ -452,54 +456,52 @@
       </div>
 
       <div class="calc-card-box" data-reveal>
-        <!-- Step 1 -->
-        <div style="margin-bottom: 28px;">
-          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-            <span style="width: 26px; height: 26px; border-radius: 50%; background: var(--primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">1</span>
+        <div style="margin-bottom: 24px;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;">1</span>
             <span data-i18n="calc_step1">1. اختر نوع المشروع الأساسي</span>
           </h4>
 
           <div class="calc-opt-grid">
             <label class="calc-opt-card active">
               <input type="radio" name="calc_project_type" value="ecommerce" checked>
-              <strong style="color: #FFF; font-size: 1rem;">متجر إلكتروني متكامل</strong>
+              <strong style="color: #FFF; font-size: 0.95rem;">متجر إلكتروني متكامل</strong>
               <span style="font-size: 0.8rem; color: var(--text-muted);">بوابات دفع سعودية وربط شحن</span>
             </label>
 
             <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="website">
-              <strong style="color: #FFF; font-size: 1rem;">موقع شركات / تعريفي</strong>
+              <strong style="color: #FFF; font-size: 0.95rem;">موقع شركات / تعريفي</strong>
               <span style="font-size: 0.8rem; color: var(--text-muted);">واجهة رسمية عصرية للعلامة</span>
             </label>
 
             <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="app">
-              <strong style="color: #FFF; font-size: 1rem;">تطبيق جوال (iOS & Android)</strong>
+              <strong style="color: #FFF; font-size: 0.95rem;">تطبيق جوال (iOS & Android)</strong>
               <span style="font-size: 0.8rem; color: var(--text-muted);">تطبيق أصلي بهوية مخصصة</span>
             </label>
 
             <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="custom">
-              <strong style="color: #FFF; font-size: 1rem;">أنظمة خاصة ولوحات تحكم</strong>
+              <strong style="color: #FFF; font-size: 0.95rem;">أنظمة خاصة ولوحات تحكم</strong>
               <span style="font-size: 0.8rem; color: var(--text-muted);">أتمتة العمليات وإدارة المنشأة</span>
             </label>
 
             <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="seo_ads">
-              <strong style="color: #FFF; font-size: 1rem;">SEO وإعلانات Google</strong>
+              <strong style="color: #FFF; font-size: 0.95rem;">SEO وإعلانات Google</strong>
               <span style="font-size: 0.8rem; color: var(--text-muted);">جلب عملاء مستهدفين بالشراء</span>
             </label>
           </div>
         </div>
 
-        <!-- Step 2 -->
-        <div style="margin-bottom: 28px;">
-          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-            <span style="width: 26px; height: 26px; border-radius: 50%; background: var(--secondary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">2</span>
+        <div style="margin-bottom: 24px;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--secondary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.8rem;">2</span>
             <span data-i18n="calc_step2">2. الميزات والخدمات الإضافية المطلوبة</span>
           </h4>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
             <label class="calc-feat-label checked">
               <input type="checkbox" name="calc_feature" value="payments" checked>
               <span>بوابات دفع سعودية (مدى / Apple Pay)</span>
@@ -535,25 +537,24 @@
           </div>
         </div>
 
-        <!-- Summary & Actions -->
-        <div style="background: var(--surface-2); border: 1px dashed var(--border-strong); border-radius: var(--r-md); padding: 22px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div style="background: var(--surface-2); border: 1px dashed var(--border-strong); border-radius: var(--r-md); padding: 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
           <div>
-            <div style="font-size: 1.15rem; font-weight: 700; color: #FFF;" id="calcSummaryType">متجر إلكتروني متكامل</div>
-            <div style="font-size: 0.88rem; color: var(--text-muted);" id="calcSummaryFeaturesCount">3 ميزات مختارة</div>
+            <div style="font-size: 1.1rem; font-weight: 700; color: #FFF;" id="calcSummaryType">متجر إلكتروني متكامل</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);" id="calcSummaryFeaturesCount">3 ميزات مختارة</div>
           </div>
-          <div style="display: flex; gap: 12px;">
+          <div style="display: flex; gap: 10px;">
             <button class="btn btn--wa btn--sm" id="calcBtnWhatsApp">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-              <span>إرسال المواصفات عبر واتساب</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>إرسال عبر واتساب</span>
             </button>
-            <button class="btn btn--primary btn--sm" id="calcBtnQuote">طلب عرض سعر رسمي</button>
+            <button class="btn btn--primary btn--sm" id="calcBtnQuote">طلب عرض سعر</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 4: Work Process (Site Snap Methodology) -->
+  <!-- Section 4: Work Process -->
   <section class="section section--alt" id="process">
     <div class="container">
       <div class="about-wrap">
@@ -640,27 +641,27 @@
     </div>
   </section>
 
-  <!-- Section 6: Contact & Quote Request Form -->
+  <!-- Section 6: Contact & Quote Form -->
   <section class="section section--alt" id="contact">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 36px; align-items: start;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: start;">
         
         <!-- Info Column -->
         <div data-reveal="right">
           <span class="eyebrow"><span class="sec-index">05</span>تواصل معنا</span>
           <h2 class="h-2" data-i18n="contact_title">جاهز لبدء مشروعك الرقمي؟</h2>
-          <p class="lead" style="margin-block: 1rem 1.8rem;" data-i18n="contact_desc">
+          <p class="lead" style="margin-block: 1rem 1.6rem;" data-i18n="contact_desc">
             تواصل معنا مباشرة عبر واتساب أو املأ النموذج وسنقوم بدراسة متطلباتك والرد عليك بعرض سعر مخصص في أسرع وقت.
           </p>
 
-          <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-md); padding: 22px; margin-bottom: 24px;">
+          <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-md); padding: 20px; margin-bottom: 20px;">
             <div style="display: flex; align-items: center; gap: 14px;">
               <span style="width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--wa-green); color: #FFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
               </span>
               <div>
-                <span style="font-size: 0.82rem; color: var(--text-muted);" data-i18n="contact_phone_label">رقم التواصل الرسمي عبر واتساب</span>
-                <div style="font-size: 1.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #FFF;">0542572634 (السعودية 🇸🇦)</div>
+                <span style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="contact_phone_label">رقم التواصل الرسمي عبر واتساب</span>
+                <div style="font-size: 1.15rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #FFF;">0542572634 (السعودية 🇸🇦)</div>
               </div>
             </div>
           </div>
@@ -671,22 +672,22 @@
         </div>
 
         <!-- Form Column -->
-        <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-xl); padding: 36px; box-shadow: var(--shadow-md);" data-reveal="left">
+        <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-xl); padding: 30px; box-shadow: var(--shadow-md);" data-reveal="left">
           <form id="mainContactForm">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
               <div>
-                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_name">الاسم الكامل *</label>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;" data-i18n="form_name">الاسم الكامل *</label>
                 <input type="text" name="client_name" class="codex-form-control" placeholder="مثال: تركي الراجحي" required>
               </div>
               <div>
-                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_phone">رقم الجوال / الواتساب *</label>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;" data-i18n="form_phone">رقم الجوال / الواتساب *</label>
                 <input type="tel" name="client_phone" class="codex-form-control" placeholder="05XXXXXXXX" required>
               </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
               <div>
-                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_service">الخدمة المطلوبة</label>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;" data-i18n="form_service">الخدمة المطلوبة</label>
                 <select name="client_service" class="codex-form-control">
                   <option value="إنشاء وتصميم المتاجر الإلكترونية">إنشاء وتصميم المتاجر الإلكترونية</option>
                   <option value="تصميم وتطوير المواقع الإلكترونية">تصميم وتطوير المواقع الإلكترونية</option>
@@ -699,7 +700,7 @@
                 </select>
               </div>
               <div>
-                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_budget">الميزانية المتوقعة</label>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;" data-i18n="form_budget">الميزانية المتوقعة</label>
                 <select name="client_budget" class="codex-form-control">
                   <option value="غير محدد">يرجى تحديد الأنسب حسب العرض</option>
                   <option value="أقل من 5,000 ريال">أقل من 5,000 ريال</option>
@@ -710,17 +711,17 @@
               </div>
             </div>
 
-            <div style="margin-bottom: 20px;">
-              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_details">تفاصيل المشروع والمتطلبات</label>
-              <textarea name="client_details" class="codex-form-control" style="min-height: 100px; resize: vertical;" placeholder="اكتب وصفاً موجزاً للمشروع وأي متطلبات خاصة ترغب بها..."></textarea>
+            <div style="margin-bottom: 18px;">
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;" data-i18n="form_details">تفاصيل المشروع والمتطلبات</label>
+              <textarea name="client_details" class="codex-form-control" style="min-height: 90px; resize: vertical;" placeholder="اكتب وصفاً موجزاً للمشروع وأي متطلبات خاصة ترغب بها..."></textarea>
             </div>
 
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
               <button type="submit" class="btn btn--primary" style="flex: 1; text-align: center; justify-content: center;" data-i18n="form_submit">
                 إرسال طلب عرض السعر
               </button>
               <button type="button" class="btn btn--wa" id="mainFormWhatsAppBtn" style="flex: 1; text-align: center; justify-content: center;">
-                <span data-i18n="form_wa_btn">إرسال البيانات عبر واتساب</span>
+                <span data-i18n="form_wa_btn">إرسال عبر واتساب</span>
               </button>
             </div>
           </form>
@@ -736,7 +737,7 @@
     <span class="sf-grid-tex" aria-hidden="true"></span>
 
     <div class="sf-wrap">
-      <!-- Call to Action (Exact Site Snap sf-cta) -->
+      <!-- Call to Action -->
       <section class="sf-cta" aria-labelledby="sf-cta-t">
         <div class="sf-cta__txt">
           <h2 id="sf-cta-t">جاهز تبدأ مشروعك الرقمي؟</h2>
@@ -755,19 +756,19 @@
       </section>
 
       <!-- Footer Columns -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 36px; padding: 40px 0 30px; border-top: 1px solid var(--border);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding: 36px 0 28px; border-top: 1px solid var(--border);">
         <div>
-          <div style="display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 1.3rem; margin-bottom: 12px; font-family: 'Space Grotesk', sans-serif;">
+          <div style="display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 1.25rem; margin-bottom: 10px; font-family: 'Space Grotesk', sans-serif;">
             <span style="color: #FFF;">CODEX<span style="color: var(--primary);">SORS</span></span>
           </div>
-          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;" data-i18n="footer_about">
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.7;" data-i18n="footer_about">
             CODEXSORS — علامة متخصصة في تقديم الحلول والخدمات الرقمية للمؤسسات والشركات والمتاجر والمشروعات الناشئة في المملكة العربية السعودية.
           </p>
         </div>
 
         <div>
-          <h4 style="font-size: 1rem; font-weight: 700; color: #FFF; margin-bottom: 14px;" data-i18n="footer_quick_links">روابط سريعة</h4>
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #FFF; margin-bottom: 12px;" data-i18n="footer_quick_links">روابط سريعة</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem;">
             <li><a href="#hero" style="color: var(--text-secondary);" data-i18n="nav_home">الرئيسية</a></li>
             <li><a href="#whyus" style="color: var(--text-secondary);" data-i18n="nav_why">لماذا نحن</a></li>
             <li><a href="#services" style="color: var(--text-secondary);" data-i18n="nav_services">خدماتنا</a></li>
@@ -777,8 +778,8 @@
         </div>
 
         <div>
-          <h4 style="font-size: 1rem; font-weight: 700; color: #FFF; margin-bottom: 14px;" data-i18n="footer_services">الخدمات</h4>
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #FFF; margin-bottom: 12px;" data-i18n="footer_services">الخدمات</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem;">
             <li><a href="#services" style="color: var(--text-secondary);">المتاجر الإلكترونية</a></li>
             <li><a href="#services" style="color: var(--text-secondary);">المواقع والمنصات</a></li>
             <li><a href="#services" style="color: var(--text-secondary);">تطبيقات الجوال</a></li>
@@ -788,8 +789,8 @@
         </div>
 
         <div>
-          <h4 style="font-size: 1rem; font-weight: 700; color: #FFF; margin-bottom: 14px;" data-i18n="footer_contact">قنوات التواصل</h4>
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #FFF; margin-bottom: 12px;" data-i18n="footer_contact">قنوات التواصل</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.88rem;">
             <li><a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" style="color: var(--wa-green); font-weight: 600;">واتساب: 0542572634</a></li>
             <li style="color: var(--text-muted);">الموقع: codexsors.com</li>
             <li><a href="admin.html" style="color: var(--secondary); font-weight: 600;" data-i18n="footer_admin">⚙️ لوحة الإدارة (Admin)</a></li>
@@ -797,21 +798,52 @@
         </div>
       </div>
 
-      <div style="border-top: 1px solid var(--border); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: var(--text-faint);">
+      <div style="border-top: 1px solid var(--border); padding-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.82rem; color: var(--text-faint);">
         <span data-i18n="footer_rights">جميع الحقوق محفوظة لشركة CODEXSORS © 2026</span>
         <span>السوق المستهدف: المملكة العربية السعودية 🇸🇦</span>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="تواصل عبر واتساب">
-    <div class="floating-wa-pulse"></div>
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+  <!-- Circular Floating Action Buttons (Exact Site Snap FABs on Mobile & Desktop) -->
+  <!-- Left: Green Circular WhatsApp Button with Pulse -->
+  <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" class="fab-wa" aria-label="تواصل عبر واتساب">
+    <div class="fab-wa-pulse"></div>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
     </svg>
-    <span data-i18n="hero_btn_whatsapp">تواصل عبر واتساب</span>
   </a>
+
+  <!-- Right: Orange Circular Quote / Chat Button -->
+  <button class="fab-quote open-quote-modal-btn" type="button" aria-label="طلب عرض سعر">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd" d="M6 3h12a4 4 0 0 1 4 4v5a4 4 0 0 1-4 4h-6.2L7 19.8V16H6a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm1.8 5.2a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Zm4.2 0a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Zm4.2 0a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z"/>
+    </svg>
+  </button>
+
+  <!-- Mobile Bottom Tab Bar (Exact Site Snap bnav dock) -->
+  <nav class="bnav-dock" aria-label="شريط التنقل السريع">
+    <a class="bnav-dock-item is-active" href="#hero">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10.4 12 4l8 6.4V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19Z"/><path d="M9.5 20.5V14.5h5v6"/></svg>
+      <span>الرئيسية</span>
+    </a>
+    <a class="bnav-dock-item" href="#services">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 9 5-9 5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>
+      <span>خدماتنا</span>
+    </a>
+    <a class="bnav-dock-item" href="#calculator">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"/><path d="M3 12h18"/></svg>
+      <span>الحاسبة</span>
+    </a>
+    <a class="bnav-dock-item" href="#process">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
+      <span>خطواتنا</span>
+    </a>
+    <a class="bnav-dock-item" href="#contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+      <span>تواصل</span>
+    </a>
+  </nav>
 
   <!-- Quick Quote Modal Dialog -->
   <div class="codex-modal-overlay" id="quoteModalOverlay">
@@ -821,22 +853,22 @@
       </button>
 
       <span class="hero-badge" style="margin-bottom: 12px;"><i class="pulse"></i>طلب عرض سعر مشروع</span>
-      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 6px; color: #FFF;">ابدأ مشروعك مع CODEXSORS</h3>
-      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 24px;">املأ البيانات وسيقوم فريقنا بدراسة المتطلبات والرد عليك بعرض سعر مخصص في أسرع وقت.</p>
+      <h3 style="font-size: 1.45rem; font-weight: 800; margin-bottom: 6px; color: #FFF;">ابدأ مشروعك مع CODEXSORS</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 22px;">املأ البيانات وسيقوم فريقنا بدراسة المتطلبات والرد عليك بعرض سعر مخصص في أسرع وقت.</p>
 
       <form id="modalQuoteForm">
         <div style="margin-bottom: 14px;">
-          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">الاسم الكامل *</label>
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;">الاسم الكامل *</label>
           <input type="text" name="client_name" class="codex-form-control" placeholder="مثال: فيصل الغامدي" required>
         </div>
 
         <div style="margin-bottom: 14px;">
-          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">رقم الجوال / الواتساب *</label>
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;">رقم الجوال / الواتساب *</label>
           <input type="tel" name="client_phone" class="codex-form-control" placeholder="05XXXXXXXX" required>
         </div>
 
         <div style="margin-bottom: 14px;">
-          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">نوع الخدمة المطلوبة</label>
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;">نوع الخدمة المطلوبة</label>
           <select name="client_service" id="modalFormService" class="codex-form-control">
             <option value="إنشاء وتصميم المتاجر الإلكترونية">إنشاء وتصميم المتاجر الإلكترونية</option>
             <option value="تصميم وتطوير المواقع الإلكترونية">تصميم وتطوير المواقع الإلكترونية</option>
@@ -850,7 +882,7 @@
         </div>
 
         <div style="margin-bottom: 14px;">
-          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">الميزانية التقديرية</label>
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;">الميزانية التقديرية</label>
           <select name="client_budget" class="codex-form-control">
             <option value="غير محدد">يرجى تحديد الأنسب حسب العرض</option>
             <option value="أقل من 5,000 ريال">أقل من 5,000 ريال</option>
@@ -860,12 +892,12 @@
           </select>
         </div>
 
-        <div style="margin-bottom: 20px;">
-          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">تفاصيل المشروع</label>
-          <textarea name="client_details" id="modalFormDetails" class="codex-form-control" style="min-height: 90px; resize: vertical;" placeholder="وضح باختصار ماذا تريد في مشروعك..."></textarea>
+        <div style="margin-bottom: 18px;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 5px;">تفاصيل المشروع</label>
+          <textarea name="client_details" id="modalFormDetails" class="codex-form-control" style="min-height: 85px; resize: vertical;" placeholder="وضح باختصار ماذا تريد في مشروعك..."></textarea>
         </div>
 
-        <div style="display: flex; gap: 12px;">
+        <div style="display: flex; gap: 10px;">
           <button type="submit" class="btn btn--primary" style="flex: 1; text-align: center; justify-content: center;">إرسال الطلب</button>
           <button type="button" class="btn btn--wa" id="modalFormWhatsAppBtn" style="flex: 1; text-align: center; justify-content: center;">إرسال عبر واتساب</button>
         </div>

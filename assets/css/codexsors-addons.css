@@ -200,6 +200,42 @@
   color: #FFF;
 }
 
+/* Full-width Details Button under the 2 action buttons */
+.btn--details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px 16px;
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+.btn--details:hover {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px -4px var(--primary-glow);
+}
+.btn--details .icon {
+  transition: transform 0.25s ease;
+}
+html[dir="rtl"] .btn--details:hover .icon {
+  transform: translateX(-4px);
+}
+html[dir="ltr"] .btn--details:hover .icon {
+  transform: translateX(4px);
+}
+
 /* 6. Calculator */
 .calc-card-box {
   background: var(--surface);

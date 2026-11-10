@@ -3,7 +3,7 @@
  */
 
 const AdminApp = {
-  DEFAULT_PIN: '918912',
+  AUTH_HASH: '78df750a1cbd1ecd21be4e539e4c98d420412ba743b9eb1bed39fbbd7199912b',
   STORAGE_KEY: 'codexsors_leads',
   currentLeads: [],
 
@@ -12,19 +12,33 @@ const AdminApp = {
     this.setupControls();
   },
 
+  async hashInput(str) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(str);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  },
+
   setupAuth() {
     const isAuth = sessionStorage.getItem('codexsors_admin_auth');
     if (isAuth === 'true') {
       this.showDashboard();
     } else {
-      document.getElementById('adminLoginForm')?.addEventListener('submit', (e) => {
+      document.getElementById('adminLoginForm')?.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const entered = document.getElementById('adminPinInput')?.value;
-        if (entered === this.DEFAULT_PIN) {
+        const input = document.getElementById('adminPinInput');
+        const entered = (input?.value || '').trim();
+        const enteredHash = await this.hashInput(entered);
+        if (enteredHash === this.AUTH_HASH) {
           sessionStorage.setItem('codexsors_admin_auth', 'true');
           this.showDashboard();
         } else {
           alert('رمز المرور غير صحيح! يرجى إعادة المحاولة.');
+          if (input) {
+            input.value = '';
+            input.focus();
+          }
         }
       });
     }

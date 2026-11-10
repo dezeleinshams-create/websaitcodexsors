@@ -444,6 +444,32 @@ function setupNavigation() {
 }
 
 // ==========================================================================
+// Secret 5-Click Admin Access Trigger
+// ==========================================================================
+function setupSecretAdminTrigger() {
+  let clickCount = 0;
+  let resetTimer = null;
+
+  document.querySelectorAll('.admin-secret-trigger').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      clickCount++;
+
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(() => {
+        clickCount = 0;
+      }, 3500);
+
+      if (clickCount >= 5) {
+        clickCount = 0;
+        const isServicesSub = window.location.pathname.includes('/services/');
+        window.location.href = isServicesSub ? '../admin.html' : 'admin.html';
+      }
+    });
+  });
+}
+
+// ==========================================================================
 // DOM Ready Initialization
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -453,4 +479,5 @@ document.addEventListener('DOMContentLoaded', () => {
   QuoteModal.init();
   setupForms();
   setupFAQ();
+  setupSecretAdminTrigger();
 });

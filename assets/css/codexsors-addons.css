@@ -37,32 +37,31 @@
   box-shadow: 0 0 15px rgba(255, 106, 26, 0.45);
 }
 
-/* 2. Language Pill Button (custom, header bar only) */
+/* 2. Language Button (Compact 2-Letter Abbreviation: EN / AR) */
 .lang-pill-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 4px 10px;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 4px;
   border-radius: var(--r-pill);
-  background: var(--surface-2);
+  background: var(--glass);
   border: 1px solid var(--border);
   color: var(--text-secondary);
+  font-family: 'Space Grotesk', -apple-system, sans-serif;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   cursor: pointer;
   transition: all 0.2s ease;
   user-select: none;
+  flex: none;
 }
 .lang-pill-btn:hover {
-  border-color: var(--border-strong);
+  border-color: var(--primary);
   color: #FFF;
-}
-.lang-pill-btn .active-lang {
-  background: var(--primary);
-  color: #FFF;
-  padding: 2px 7px;
-  border-radius: var(--r-pill);
-  font-size: 0.75rem;
+  background: var(--surface-2);
 }
 
 /* 3. Modal Styling */

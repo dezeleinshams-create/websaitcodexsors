@@ -347,9 +347,8 @@ window.i18n = {
 
     const switcher = document.getElementById('langSwitcher');
     if (switcher) {
-      switcher.innerHTML = (lang === 'ar') 
-        ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> English`
-        : `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> العربية`;
+      switcher.textContent = (lang === 'ar') ? 'EN' : 'AR';
+      switcher.setAttribute('aria-label', (lang === 'ar') ? 'Switch to English' : 'التحويل إلى العربية');
     }
   },
 

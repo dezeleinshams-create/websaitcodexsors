@@ -3,7 +3,7 @@
  */
 
 const AdminApp = {
-  DEFAULT_PIN: '2026',
+  DEFAULT_PIN: '918912',
   STORAGE_KEY: 'codexsors_leads',
   currentLeads: [],
 
@@ -24,7 +24,7 @@ const AdminApp = {
           sessionStorage.setItem('codexsors_admin_auth', 'true');
           this.showDashboard();
         } else {
-          alert('رمز المرور غير صحيح! (الافتراضي: 2026)');
+          alert('رمز المرور غير صحيح! يرجى إعادة المحاولة.');
         }
       });
     }

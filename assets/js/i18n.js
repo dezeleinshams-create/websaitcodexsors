@@ -18,8 +18,9 @@ const translations = {
     hero_badge: "شريكك التقني الموثوق في المملكة العربية السعودية",
     hero_title: "نحوّل أفكارك إلى حلول رقمية تصنع الفرق",
     hero_subtitle: "CODEXSORS علامة متخصصة في تقديم الحلول والخدمات البرمجية للشركات، المتاجر، والمشروعات الناشئة. نبني منصاتك وتطبيقاتك بأعلى معايير الجودة والأمان.",
-    hero_btn_quote: "اطلب عرض سعر لمشروعك",
+    hero_btn_quote: "ابدأ مشروعك",
     hero_btn_whatsapp: "محادثة فورية عبر واتساب",
+    hero_btn_explore: "شاهد خدماتنا",
 
     hl_clean_code: "كود مخصص ونظيف",
     hl_clean_code_sub: "بدون قوالب مكررة أو بطيئة",
@@ -177,8 +178,9 @@ const translations = {
     hero_badge: "Your Trusted Digital Partner in Saudi Arabia",
     hero_title: "Transforming Your Ideas Into Digital Solutions That Make An Impact",
     hero_subtitle: "CODEXSORS is a premier digital solutions and software development company serving enterprises, e-commerce stores, and ambitious startups across Saudi Arabia.",
-    hero_btn_quote: "Request a Project Quote",
+    hero_btn_quote: "Start Your Project",
     hero_btn_whatsapp: "Chat on WhatsApp",
+    hero_btn_explore: "Explore Services",
 
     hl_clean_code: "Clean & Custom Code",
     hl_clean_code_sub: "Zero bloated, generic templates",

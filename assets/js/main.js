@@ -51,8 +51,9 @@ const Calculator = {
     typeInputs.forEach(input => {
       input.addEventListener('change', (e) => {
         this.currentType = e.target.value;
-        document.querySelectorAll('.type-option-label').forEach(lbl => lbl.classList.remove('active'));
-        e.target.closest('.type-option-label').classList.add('active');
+        document.querySelectorAll('.calc-opt-card, .type-option-label').forEach(lbl => lbl.classList.remove('active'));
+        const card = e.target.closest('.calc-opt-card, .type-option-label');
+        if (card) card.classList.add('active');
         this.updateSummary();
       });
     });
@@ -60,12 +61,13 @@ const Calculator = {
     const featureCheckboxes = document.querySelectorAll('input[name="calc_feature"]');
     featureCheckboxes.forEach(box => {
       box.addEventListener('change', (e) => {
+        const lbl = e.target.closest('.calc-feat-label, .feature-check-label');
         if (e.target.checked) {
           this.selectedFeatures.add(e.target.value);
-          e.target.closest('.feature-check-label').classList.add('checked');
+          if (lbl) lbl.classList.add('checked');
         } else {
           this.selectedFeatures.delete(e.target.value);
-          e.target.closest('.feature-check-label').classList.remove('checked');
+          if (lbl) lbl.classList.remove('checked');
         }
         this.updateSummary();
       });
@@ -375,18 +377,19 @@ function showToast(message, type = 'info') {
 // FAQ Accordion
 // ==========================================================================
 function setupFAQ() {
-  const faqItems = document.querySelectorAll('.faq-item');
+  const faqItems = document.querySelectorAll('.faq-box-item, .faq-item');
   faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    const answer = item.querySelector('.faq-answer');
+    const btn = item.querySelector('.faq-box-btn, .faq-question');
+    const answer = item.querySelector('.faq-box-answer, .faq-answer');
+    if (!btn || !answer) return;
     
-    question.addEventListener('click', () => {
+    btn.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
       
       // Close all others
       faqItems.forEach(other => {
         other.classList.remove('active');
-        const otherAnswer = other.querySelector('.faq-answer');
+        const otherAnswer = other.querySelector('.faq-box-answer, .faq-answer');
         if (otherAnswer) otherAnswer.style.maxHeight = null;
       });
 
@@ -402,29 +405,32 @@ function setupFAQ() {
 // Mobile Nav & Scroll Spy
 // ==========================================================================
 function setupNavigation() {
-  const toggle = document.getElementById('menuToggle');
-  const menu = document.getElementById('navMenu');
-  const navbar = document.getElementById('navbar');
+  // Bottom Nav Dock active link updater
+  const bnavItems = document.querySelectorAll('.bnav-item');
+  const sections = ['hero', 'services', 'calculator', 'process', 'contact'];
 
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
+  function updateBnavOnScroll() {
+    const scrollPos = window.scrollY + 180;
+    let currentSec = 'hero';
+
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollPos) {
+        currentSec = id;
+      }
     });
 
-    menu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('open');
-      });
+    bnavItems.forEach(item => {
+      const href = item.getAttribute('href');
+      if (href === `#${currentSec}`) {
+        item.classList.add('is-active');
+      } else {
+        item.classList.remove('is-active');
+      }
     });
   }
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar?.classList.add('scrolled');
-    } else {
-      navbar?.classList.remove('scrolled');
-    }
-  });
+  window.addEventListener('scroll', updateBnavOnScroll, { passive: true });
 
   // Language Switcher
   const langBtn = document.getElementById('langSwitcher');

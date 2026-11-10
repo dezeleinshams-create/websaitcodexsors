@@ -4,31 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#07080D">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="dark light">
 
   <title>CODEXSORS | Build Your Digital Future — نحوّل أفكارك إلى حلول رقمية تصنع الفرق</title>
-  <meta name="description" content="CODEXSORS علامة متخصصة في تقديم الحلول والخدمات الرقمية في المملكة العربية السعودية: تصميم وتطوير المواقع والمتاجر الإلكترونية، تطبيقات الجوال، وتطوير الأنظمة الخاصة.">
-  <meta name="keywords" content="CODEXSORS, كودكس سورس, تصميم مواقع في السعودية, إنشاء متجر إلكتروني, برمجة تطبيقات الرياض, تصميم واجهات UI UX, تطوير برمجيات خاصة, سيو السعودية, حملات جوجل إعلانية">
+  <meta name="description" content="CODEXSORS علامة متخصصة في تقديم الحلول والخدمات الرقمية في المملكة العربية السعودية: تصميم وتطوير المواقع والمتاجر الإلكترونية، تطبيقات الجوال، والأنظمة الخاصة.">
+  <meta name="keywords" content="CODEXSORS, كودكس سورس, تصميم مواقع في السعودية, إنشاء متجر إلكتروني, برمجة تطبيقات الرياض, تصميم واجهات UI UX, تطوير برمجيات خاصة, سيو السعودية">
   <meta name="author" content="CODEXSORS">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical & Social Meta -->
   <link rel="canonical" href="https://codexsors.com">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CODEXSORS">
   <meta property="og:title" content="CODEXSORS | Build Your Digital Future">
-  <meta property="og:description" content="نحوّل أفكارك إلى حلول رقمية تصنع الفرق. خدمات برمجية وتصميمية متكاملة لرواد الأعمال والشركات في المملكة العربية السعودية.">
-  <meta property="og:url" content="https://codexsors.com">
+  <meta property="og:description" content="نحوّل أفكارك إلى حلول رقمية تصنع الفرق. حلول رقمية وبرمجية متكاملة للشركات ورواد الأعمال والمتاجر في المملكة العربية السعودية.">
 
-  <!-- Fonts: IBM Plex Sans Arabic + Space Grotesk -->
+  <!-- Google Fonts: IBM Plex Sans Arabic + Space Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Master Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Site Snap Official Master Stylesheet & Addons -->
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/service-details.css">
+  <link rel="stylesheet" href="assets/css/codexsors-addons.css">
 
-  <!-- Structured Data JSON-LD for Saudi Local Tech Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,918 +37,601 @@
     "url": "https://codexsors.com",
     "telephone": "+966542572634",
     "priceRange": "$$",
-    "description": "حلول وخدمات رقمية متكاملة: تصميم المواقع، المتاجر الإلكترونية، تطبيقات الجوال والأنظمة البرمجية الخاصة في المملكة العربية السعودية.",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Saudi Arabia"
-    },
+    "description": "حلول وخدمات رقمية متكاملة لرواد الأعمال والشركات في المملكة العربية السعودية.",
+    "areaServed": "Saudi Arabia",
     "slogan": "Build Your Digital Future"
   }
   </script>
 </head>
-<body>
+<body class="page-home">
 
-  <!-- Background Mesh & Grid Glows -->
-  <div class="bg-mesh"></div>
-  <div class="bg-grid"></div>
-
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="nav-brand">
-        <div class="brand-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <polyline points="16 18 22 12 16 6"/>
-            <polyline points="8 6 2 12 8 18"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-title">CODEXSORS</span>
-          <span class="brand-subtitle" data-i18n="brand_tagline">Build Your Digital Future</span>
-        </div>
+  <!-- Header & Navigation (Exact Site Snap Header Structure) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#hero" aria-label="CODEXSORS">
+        <span style="display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.35rem; font-family: 'Space Grotesk', sans-serif;">
+          <span style="width: 34px; height: 34px; border-radius: 8px; background: var(--primary); display: flex; align-items: center; justify-content: center; color: #FFF; box-shadow: 0 0 15px rgba(255, 106, 26, 0.4);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </span>
+          <span style="color: #FFF; letter-spacing: -0.01em;">CODEX<span style="color: var(--primary);">SORS</span></span>
+        </span>
       </a>
 
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#hero" class="nav-link active" data-i18n="nav_home">الرئيسية</a></li>
-        <li><a href="#services" class="nav-link" data-i18n="nav_services">خدماتنا</a></li>
-        <li><a href="#calculator" class="nav-link" data-i18n="nav_calc">حاسبة المشروع</a></li>
-        <li><a href="#process" class="nav-link" data-i18n="nav_process">خطوات العمل</a></li>
-        <li><a href="#why-us" class="nav-link" data-i18n="nav_why">لماذا نحن</a></li>
-        <li><a href="#faq" class="nav-link" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
-        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معنا</a></li>
-      </ul>
+      <nav class="nav" id="siteNav" aria-label="القائمة">
+        <span class="nav-ind" aria-hidden="true"></span>
+        <ul class="nav-list">
+          <li><a class="nav-link is-active" href="#hero" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a class="nav-link" href="#whyus" data-i18n="nav_why">لماذا نحن</a></li>
+          <li><a class="nav-link" href="#services" data-i18n="nav_services">خدماتنا</a></li>
+          <li><a class="nav-link" href="#calculator" data-i18n="nav_calc">حاسبة المشروع</a></li>
+          <li><a class="nav-link" href="#process" data-i18n="nav_process">خطوات العمل</a></li>
+          <li><a class="nav-link" href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
+          <li><a class="nav-link" href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
 
-      <div class="nav-actions">
+      <div class="header-actions">
         <!-- Language Switcher -->
-        <button class="lang-switch" id="langSwitcher" aria-label="تبديل اللغة">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20"/>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-          </svg>
+        <button class="nav-link" id="langSwitcher" style="background: none; border: 1px solid var(--border); border-radius: var(--r-pill); padding: 6px 14px; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 6px;" aria-label="تبديل اللغة">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           English
         </button>
 
-        <a href="#contact" class="btn btn-primary btn-sm nav-cta-btn open-quote-modal-btn" data-i18n="nav_cta">
+        <a class="btn btn--primary btn--sm open-quote-modal-btn" href="#contact" data-i18n="nav_cta">
           طلب عرض سعر
         </a>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero" id="hero">
-    <div class="container hero-content">
-      <div class="badge">
-        <span class="badge-dot"></span>
-        <span data-i18n="hero_badge">شريكك التقني الموثوق في المملكة العربية السعودية</span>
-      </div>
-
-      <h1 class="hero-title" data-i18n="hero_title">
-        نحوّل أفكارك إلى <span class="text-gradient">حلول رقمية</span> تصنع الفرق
-      </h1>
-
-      <p class="hero-subtitle" data-i18n="hero_subtitle">
-        CODEXSORS علامة متخصصة في تقديم الحلول والخدمات البرمجية للشركات، المتاجر، والمشروعات الناشئة. نبني منصاتك وتطبيقاتك بأعلى معايير الجودة والأمان وبما يلائم تطلعات السوق السعودي.
-      </p>
-
-      <div class="hero-cta">
-        <button class="btn btn-primary open-quote-modal-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10 9 9 9 8 9"/>
-          </svg>
-          <span data-i18n="hero_btn_quote">اطلب عرض سعر لمشروعك</span>
-        </button>
-
-        <a href="https://wa.me/966542572634?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20CODEXSORS" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-          </svg>
-          <span data-i18n="hero_btn_whatsapp">محادثة فورية عبر واتساب</span>
-        </a>
-      </div>
-
-      <!-- Highlights Bar -->
-      <div class="hero-highlights">
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="16 18 22 12 16 6"/>
-              <polyline points="8 6 2 12 8 18"/>
-            </svg>
-          </div>
-          <div class="highlight-text">
-            <h4 data-i18n="hl_clean_code">كود مخصص ونظيف</h4>
-            <p data-i18n="hl_clean_code_sub">بدون قوالب مكررة أو بطيئة</p>
-          </div>
-        </div>
-
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12 6 12 12 16 14"/>
-            </svg>
-          </div>
-          <div class="highlight-text">
-            <h4 data-i18n="hl_contracts">اتفاقيات ومواعيد دقيقة</h4>
-            <p data-i18n="hl_contracts_sub">التزام كامل بخطة العمل</p>
-          </div>
-        </div>
-
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <div class="highlight-text">
-            <h4 data-i18n="hl_saudi_market">مهيأ للسوق السعودي</h4>
-            <p data-i18n="hl_saudi_market_sub">تكامل مع الدفع والشحن المعتمد</p>
-          </div>
-        </div>
-
-        <div class="highlight-item">
-          <div class="highlight-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-            </svg>
-          </div>
-          <div class="highlight-text">
-            <h4 data-i18n="hl_support">دعم فني وضمان شامل</h4>
-            <p data-i18n="hl_support_sub">متابعة مستمرة بعد الإطلاق</p>
-          </div>
-        </div>
       </div>
     </div>
   </header>
 
-  <!-- Services Section (8 Core Services) -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span data-i18n="nav_services">خدماتنا</span>
+  <!-- Hero Section (Exact Site Snap Cinematic Hero) -->
+  <section class="hero hero--media hero--cinematic" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="beam beam--primary"></span>
+      <span class="beam beam--secondary"></span>
+      <span class="mesh"></span>
+    </div>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <span class="hero-grade" aria-hidden="true"></span>
+
+    <div class="container hero-inner">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <p class="hero-badge"><i class="pulse"></i><span data-i18n="hero_badge">نستقبل مشاريع جديدة في المملكة العربية السعودية</span></p>
+
+          <h1 class="hero-title">
+            <span class="line">مشروعك مش مجرد كود..</span>
+            <span class="line">هو <span class="hl">حل رقمي</span> يصنع الفرق</span>
+          </h1>
+
+          <p class="hero-lead" data-i18n="hero_subtitle">
+            CODEXSORS علامة متخصصة في تقديم الحلول والخدمات البرمجية للشركات، المتاجر، والمشروعات الناشئة. نبني منصاتك وتطبيقاتك بأعلى معايير الجودة والأمان وبما يلائم تطلعات السوق السعودي.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn--primary btn--lg open-quote-modal-btn">
+              <span data-i18n="hero_btn_quote">اطلب عرض سعر لمشروعك</span>
+              <svg class="icon icon--arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </button>
+
+            <a class="btn btn--ghost btn--lg" href="https://wa.me/966542572634?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20CODEXSORS" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span data-i18n="hero_btn_whatsapp">محادثة فورية عبر واتساب</span>
+            </a>
+          </div>
+
+          <!-- Hero Proof Facts (Real Quality Metrics) -->
+          <div class="hero-facts">
+            <div class="hero-fact">
+              <span class="v" dir="ltr"><em></em>100<em>%</em></span>
+              <span class="l" data-i18n="hl_clean_code">كود مخصص ونظيف</span>
+            </div>
+            <div class="hero-fact">
+              <span class="v" dir="ltr"><em></em>8<em></em></span>
+              <span class="l" data-i18n="services_title">خدمات رقمية متكاملة</span>
+            </div>
+            <div class="hero-fact">
+              <span class="v" dir="ltr"><em></em>🇸🇦<em></em></span>
+              <span class="l" data-i18n="hl_saudi_market">مهيأ للسوق السعودي</span>
+            </div>
+            <div class="hero-fact">
+              <span class="v" dir="ltr"><em></em>24/7<em></em></span>
+              <span class="l" data-i18n="hl_support">دعم فني ومتابعة مستمرة</span>
+            </div>
+          </div>
         </div>
-        <h2 class="section-title" data-i18n="services_title">خدماتنا الرقمية المتكاملة</h2>
-        <p class="section-desc" data-i18n="services_desc">
-          نقدّم 8 خدمات رئيسية مدروسة بعناية لتغطية احتياجات المشروعات من مرحلة الفكرة والتصميم وحتى الإطلاق والنمو في السوق.
-        </p>
+      </div>
+    </div>
+
+    <span class="hero-cue" aria-hidden="true">اسحب للأسفل<i class="bar"></i></span>
+  </section>
+
+  <!-- Section 1: Why Us (Exact Site Snap Feature Grid) -->
+  <section class="section section--tight texture-grid" id="whyus">
+    <span class="glow glow--orange" style="inset-inline-end:0;top:6%;width:min(44vw,380px);aspect-ratio:1"></span>
+    <div class="container">
+      <div class="sec-head sec-head--center" data-reveal>
+        <div class="sec-head-main">
+          <h2 class="h-2">لماذا <span class="hl">CODEXSORS</span>؟</h2>
+          <p class="sec-desc" data-i18n="why_desc">نحن لسنا مجرد منفذين تقنيين، بل شركاء نجاح نستثمر خبراتنا لضمان تفوق مشروعك في السوق السعودي.</p>
+        </div>
       </div>
 
-      <div class="services-grid">
-
-        <!-- Service 1: Web Design & Development -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <span class="service-num">01</span>
-            </div>
-            <h3 class="service-title" data-i18n="s1_title">تصميم وتطوير المواقع الإلكترونية</h3>
-            <p class="service-desc" data-i18n="s1_desc">
-              بناء مواقع تعريفية ومواقع شركات احترافية تعكس هوية علامتك التجارية، سريعة التصفح، ومتوافقة بنسبة 100% مع جميع الأجهزة ومحركات البحث.
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s1_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تصميم واجهات عصري يعبر عن هوية الشركة وقيمها.</span>
-                </li>
-                <li data-i18n="s1_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>سرعة تحميل فائقة وتوافق كامل مع شاشات الجوال والتابلت.</span>
-                </li>
-                <li data-i18n="s1_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>لوحة تحكم ديناميكية وسهلة لإدارة وتحديث محتوى الموقع.</span>
-                </li>
-                <li data-i18n="s1_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تأمين شامل وحماية بشهادات SSL وممارسات أمان متقدمة.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="تصميم وتطوير المواقع الإلكترونية" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('تصميم وتطوير المواقع الإلكترونية')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
-          </div>
+      <div class="feature-grid">
+        <article class="feature-card" data-reveal data-reveal-group="0">
+          <span class="feature-ico">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 4 7-4 12-4-12Z"/><path d="M8 9h8"/></svg>
+          </span>
+          <h3 class="feature-title" data-i18n="w1_title">تطوير مخصص بدون قوالب جاهزة</h3>
+          <p class="feature-text" data-i18n="w1_desc">كل سطر برمجي يُكتب خصيصاً لخدمة أهداف عملك، مما يضمن سرعة فائقة وحماية من ثغرات القوالب المستهلكة.</p>
         </article>
 
-        <!-- Service 2: E-Commerce Store Creation -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="9" cy="21" r="1"/>
-                  <circle cx="20" cy="21" r="1"/>
-                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                </svg>
-              </div>
-              <span class="service-num">02</span>
-            </div>
-            <h3 class="service-title" data-i18n="s2_title">إنشاء وتصميم المتاجر الإلكترونية</h3>
-            <p class="service-desc" data-i18n="s2_desc">
-              متجرك هو واجهتك البيعية على مدار 24 ساعة. نبني متاجر سريعة ومصممة لزيادة معدل التحويل وسهولة الشراء مع تجربة مستخدم سلسة خالية من التعقيد.
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s2_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تكامل سلس مع بوابات الدفع المعتمدة في السعودية (مدى، Apple Pay، تمارا، تابي).</span>
-                </li>
-                <li data-i18n="s2_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>ربط مع شركات الشحن وإدارة المخزون والتنبيهات التلقائية.</span>
-                </li>
-                <li data-i18n="s2_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تصميم صفحات المنتجات وسلة الشراء لتحقيق أعلى نسبة إتمام للطلبات.</span>
-                </li>
-                <li data-i18n="s2_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>لوحة تحكم تفصيلية لمتابعة المبيعات والطلبات والتقارير المالية.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="إنشاء وتصميم المتاجر الإلكترونية" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('إنشاء وتصميم المتاجر الإلكترونية')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
-          </div>
+        <article class="feature-card" data-reveal data-reveal-group="1">
+          <span class="feature-ico">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          </span>
+          <h3 class="feature-title" data-i18n="w2_title">فهم عميق للسوق السعودي</h3>
+          <p class="feature-text" data-i18n="w2_desc">ندرك متطلبات السوق المحلي واحتياجات المستهلك السعودي وتكامل المنصات مع بوابات الدفع والشحن المعتمدة.</p>
         </article>
 
-        <!-- Service 3: Mobile App Development -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                  <line x1="12" y1="18" x2="12.01" y2="18"/>
-                </svg>
-              </div>
-              <span class="service-num">03</span>
-            </div>
-            <h3 class="service-title" data-i18n="s3_title">تطوير تطبيقات Android و iOS</h3>
-            <p class="service-desc" data-i18n="s3_desc">
-              تطوير تطبيقات جوال أصلية (Native & Cross-Platform) فائقة الأداء، تقدم تجربة مستخدم متميزة، وتعمل باستقرار تام على منصتي Google Play و Apple App Store.
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s3_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>بنية برمجية قوية وقابلة للتوسع لاستيعاب آلاف المستخدمين.</span>
-                </li>
-                <li data-i18n="s3_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تصميم شاشات تفاعلية ومريحة تناسب سلوك المستخدمين في السعودية.</span>
-                </li>
-                <li data-i18n="s3_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>نظام إشعارات ذكية مخصص، وربط مع بوابات الدفع الإلكتروني والخرائط.</span>
-                </li>
-                <li data-i18n="s3_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>إشراف كامل على تجهيز التطبيق ورفعه وقبوله في المتاجر الرسمية.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="تطوير تطبيقات Android و iOS" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('تطوير تطبيقات Android و iOS')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
-          </div>
+        <article class="feature-card" data-reveal data-reveal-group="2">
+          <span class="feature-ico">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12Z"/></svg>
+          </span>
+          <h3 class="feature-title" data-i18n="w3_title">التزام كامل بالمواعيد والمخرجات</h3>
+          <p class="feature-text" data-i18n="w3_desc">نعمل بخطط زمنية محددة وعقود واضحة تضمن تسليم كل مرحلة في موعدها الدقيق دون تسويف.</p>
         </article>
 
-        <!-- Service 4: UI/UX Design -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 20h9"/>
-                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-                </svg>
-              </div>
-              <span class="service-num">04</span>
-            </div>
-            <h3 class="service-title" data-i18n="s4_title">تصميم واجهات وتجربة المستخدم UI/UX</h3>
-            <p class="service-desc" data-i18n="s4_desc">
-              نحوّل العمليات المعقدة إلى واجهات بصرية أنيقة وتجربة استخدام بديهية تعتمد على دراسة سلوك العميل وتضمن بقاء الزائر وسهولة وصوله لأهدافه.
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s4_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>دراسة وتحليل رحلة العميل وسلوكه قبل البدء بالتصميم.</span>
-                </li>
-                <li data-i18n="s4_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تصميم نماذج أولية تفاعلية (Interactive Wireframes & Prototypes).</span>
-                </li>
-                <li data-i18n="s4_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>نظام تصميم متكامل (Design System) موحد لكل مكونات المنصة.</span>
-                </li>
-                <li data-i18n="s4_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>اختبارات قابلية الاستخدام لضمان أعلى مستويات السلاسة.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="تصميم واجهات وتجربة المستخدم UI/UX" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('تصميم واجهات وتجربة المستخدم UI/UX')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
-          </div>
+        <article class="feature-card" data-reveal data-reveal-group="3">
+          <span class="feature-ico">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h2.5a1.5 1.5 0 0 1 1.5 1.5v2A1.5 1.5 0 0 1 6.5 19H6a2 2 0 0 1-2-2Z"/><path d="M20 14h-2.5a1.5 1.5 0 0 0-1.5 1.5v2a1.5 1.5 0 0 0 1.5 1.5h.5a2 2 0 0 0 2-2Z"/></svg>
+          </span>
+          <h3 class="feature-title" data-i18n="w4_title">أمان متقدم وحماية للبيانات</h3>
+          <p class="feature-text" data-i18n="w4_desc">نطبق أفضل الممارسات البرمجية العالمية لحماية بياناتك وبيانات عملائك من أي تسريب أو هجمات.</p>
         </article>
+      </div>
+    </div>
+  </section>
 
-        <!-- Service 5: Custom Systems & Dashboards -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="3" y="3" width="7" height="7"/>
-                  <rect x="14" y="3" width="7" height="7"/>
-                  <rect x="14" y="14" width="7" height="7"/>
-                  <rect x="3" y="14" width="7" height="7"/>
-                </svg>
-              </div>
-              <span class="service-num">05</span>
-            </div>
-            <h3 class="service-title" data-i18n="s5_title">تطوير الأنظمة والبرمجيات الخاصة ولوحات التحكم</h3>
-            <p class="service-desc" data-i18n="s5_desc">
-              حلول برمجية مخصصة للشركات لأتمتة العمليات اليومية وإدارة الأعمال، مثل أنظمة إدارة علاقات العملاء (CRM)، وإدارة الموارد (ERP)، ولوحات التحكم اللحظية.
-            </p>
+  <!-- Section 2: Services Grid (Exact Site Snap Services Section with our 8 Core Services) -->
+  <section class="section section--alt texture-grid" id="services">
+    <span class="glow glow--orange" style="inset-inline-start:0;top:14%;width:min(48vw,420px);aspect-ratio:1"></span>
+    <div class="container">
+      <div class="sec-head sec-head--center" data-reveal>
+        <div class="sec-head-main">
+          <span class="eyebrow"><span class="sec-index">01</span>خدماتنا</span>
+          <h2 class="h-2">حلول رقمية متكاملة تصنع <span class="hl">الفرق</span></h2>
+          <p class="sec-desc" data-i18n="services_desc">نقدّم 8 خدمات رئيسية مدروسة بعناية لتغطية احتياجات المشروعات من مرحلة الفكرة والتصميم وحتى الإطلاق والنمو في السوق.</p>
+        </div>
+      </div>
 
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s5_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>هندسة برمجية مفصلة خصيصاً لتناسب دورة عمل منشأتك بدقة.</span>
-                </li>
-                <li data-i18n="s5_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>صلاحيات دقيقة للمستخدمين والموظفين مع حماية مشددة للبيانات.</span>
-                </li>
-                <li data-i18n="s5_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تقارير بيانية وإحصائيات فورية تدعم اتخاذ القرارات الإدارية.</span>
-                </li>
-                <li data-i18n="s5_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>واجهات برمجة تطبيقات (APIs) للربط مع أي منصات أو خدمات خارجية.</span>
-                </li>
-              </ul>
-            </div>
+      <div class="svc-grid">
+
+        <!-- 01: E-Commerce -->
+        <div class="svc-card" data-reveal data-reveal-group="0">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </span>
+            <span class="svc-no">01</span>
+          </div>
+          <span class="svc-tag">متجر يبيع لعملائك 24 ساعة دون توقف</span>
+          <h3 data-i18n="s2_title">إنشاء وتصميم المتاجر الإلكترونية</h3>
+          <p data-i18n="s2_desc">متجرك هو واجهتك البيعية. نبني متاجر سريعة ومصممة لزيادة معدل التحويل وسهولة الشراء مع تجربة مستخدم سلسة خالية من التعقيد.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تكامل مع بوابات الدفع (مدى، Apple Pay، تمارا، تابي).</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>ربط شركات الشحن وإدارة المخزون والتنبيهات.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>صفحات منتجات وسلة مهيأة لتقليل السلات المتروكة.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>لوحة تحكم تفصيلية لمتابعة المبيعات والطلبات.</span></li>
+            </ul>
           </div>
 
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="تطوير الأنظمة والبرمجيات الخاصة" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('تطوير الأنظمة والبرمجيات الخاصة')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="إنشاء وتصميم المتاجر الإلكترونية">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('إنشاء وتصميم المتاجر الإلكترونية')">واتساب مباشر</button>
           </div>
-        </article>
+        </div>
 
-        <!-- Service 6: Maintenance & Performance Optimization -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                </svg>
-              </div>
-              <span class="service-num">06</span>
-            </div>
-            <h3 class="service-title" data-i18n="s6_title">صيانة المواقع وتحسين أدائها</h3>
-            <p class="service-desc" data-i18n="s6_desc">
-              نضمن بقاء منصتك الإلكترونية تعمل بأقصى سرعة واستقرار، مع التحديثات الأمنية الدورية، والنسخ الاحتياطي، وحل المشكلات التقنية قبل أن يشعر بها عملاؤك.
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s6_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>مراقبة مستمرة للأداء وسرعة الاستجابة على مدار الساعة.</span>
-                </li>
-                <li data-i18n="s6_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>فحص أمني دوري وسد الثغرات وتحديث البرمجيات ومكتبات الكود.</span>
-                </li>
-                <li data-i18n="s6_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>نسخ احتياطي منتظم لقواعد البيانات والملفات في بيئة معزولة.</span>
-                </li>
-                <li data-i18n="s6_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>فريق دعم فني سريع الاستجابة للتعامل مع أي طوارئ تقنية.</span>
-                </li>
-              </ul>
-            </div>
+        <!-- 02: Websites -->
+        <div class="svc-card" data-reveal data-reveal-group="1">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </span>
+            <span class="svc-no">02</span>
+          </div>
+          <span class="svc-tag">حضور رقمي يترك انطباعاً أولياً قوياً</span>
+          <h3 data-i18n="s1_title">تصميم وتطوير المواقع الإلكترونية</h3>
+          <p data-i18n="s1_desc">بناء مواقع تعريفية ومواقع شركات تعكس هوية علامتك التجارية، سريعة التصفح، ومتوافقة بنسبة 100% مع جميع الأجهزة ومحركات البحث.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تصميم واجهات عصري يعبر عن هوية الشركة وقيمها.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>سرعة فائقة وتوافق كامل مع شاشات الجوال.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>لوحة تحكم ديناميكية وسهلة لإدارة المحتوى.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تأمين شامل وحماية بشهادات SSL وممارسات حديثة.</span></li>
+            </ul>
           </div>
 
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="صيانة المواقع وتحسين أدائها" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('صيانة المواقع وتحسين أدائها')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="تصميم وتطوير المواقع الإلكترونية">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('تصميم وتطوير المواقع الإلكترونية')">واتساب مباشر</button>
           </div>
-        </article>
+        </div>
 
-        <!-- Service 7: Search Engine Optimization (SEO) -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                  <line x1="11" y1="8" x2="11" y2="14"/>
-                  <line x1="8" y1="11" x2="14" y2="11"/>
-                </svg>
-              </div>
-              <span class="service-num">07</span>
-            </div>
-            <h3 class="service-title" data-i18n="s7_title">تحسين محركات البحث SEO</h3>
-            <p class="service-desc" data-i18n="s7_desc">
-              نساعد موقعك ومتجرك على تصدر نتائج البحث الأولى في Google للكلمات المفتاحية الأكثر ربحية واستهدافاً للعملاء داخل المملكة العربية السعودية.
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s7_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تهيئة تقنية شاملة للموقع (سرعة، هيكل الروابط، خريطة الموقع).</span>
-                </li>
-                <li data-i18n="s7_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>استهداف كلمات مفتاحية دقيقة يطلبها الجمهور السعودي الفعلي.</span>
-                </li>
-                <li data-i18n="s7_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تحسين المحتوى وبناء تجربة تصفح تدعم ثقة محركات البحث.</span>
-                </li>
-                <li data-i18n="s7_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>تقارير شهرية شفافة توضح تطور الترتيب وزيادة عدد الزوار.</span>
-                </li>
-              </ul>
-            </div>
+        <!-- 03: Mobile Apps -->
+        <div class="svc-card" data-reveal data-reveal-group="2">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18.5h2"/></svg>
+            </span>
+            <span class="svc-no">03</span>
+          </div>
+          <span class="svc-tag">تطبيق جوال يضع خدمتك في يد عميلك أينما كان</span>
+          <h3 data-i18n="s3_title">تطوير تطبيقات Android و iOS</h3>
+          <p data-i18n="s3_desc">تطوير تطبيقات جوال فائقة الأداء، تقدم تجربة مستخدم متميزة، وتعمل باستقرار تام على منصتي Google Play و Apple App Store.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>بنية برمجية قوية وقابلة للتوسع لآلاف المستخدمين.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تصميم شاشات تفاعلية تناسب سلوك المستهلك السعودي.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>نظام إشعارات ذكية وربط بوابات الدفع والخرائط.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>إشراف كامل على رفع وقبول التطبيق في المتاجر.</span></li>
+            </ul>
           </div>
 
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="تحسين محركات البحث SEO" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('تحسين محركات البحث SEO')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="تطوير تطبيقات Android و iOS">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('تطوير تطبيقات Android و iOS')">واتساب مباشر</button>
           </div>
-        </article>
+        </div>
 
-        <!-- Service 8: Google Ads Campaign Management -->
-        <article class="service-card">
-          <div>
-            <div class="service-header">
-              <div class="service-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2v20"/>
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                </svg>
-              </div>
-              <span class="service-num">08</span>
-            </div>
-            <h3 class="service-title" data-i18n="s8_title">إعداد وإدارة الحملات الإعلانية على Google Ads</h3>
-            <p class="service-desc" data-i18n="s8_desc">
-              إدارة حملات إعلانية احترافية مدروسة على شبكة البحث ويوتيوب، تضمن وصولك للعميل المستعد للشراء، مع مراقبة يومية لتحقيق أعلى عائد على الإنفاق الإعلاني (ROAS).
-            </p>
-
-            <div class="service-deliverables">
-              <div class="deliverables-title" data-i18n="service_deliverables_head">ما الذي ستحصل عليه:</div>
-              <ul class="deliverables-list">
-                <li data-i18n="s8_d1">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>هيكلة احترافية للحملات الإعلانية تستهدف نية الشراء الحقيقية.</span>
-                </li>
-                <li data-i18n="s8_d2">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>كتابة نصوص إعلانية مقنعة واختبار نسخ متعددة للوصول لأفضل أداء.</span>
-                </li>
-                <li data-i18n="s8_d3">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>ضبط دقيق لتتبع التحويلات (Conversion Tracking) وربط Google Analytics.</span>
-                </li>
-                <li data-i18n="s8_d4">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>إدارة الميزانية لتفادي الهدر وتحقيق أقل تكلفة للاستحواذ على العميل.</span>
-                </li>
-              </ul>
-            </div>
+        <!-- 04: UI/UX -->
+        <div class="svc-card" data-reveal data-reveal-group="3">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </span>
+            <span class="svc-no">04</span>
+          </div>
+          <span class="svc-tag">تصميم بديهي ومريح يضمن سهولة الاستخدام</span>
+          <h3 data-i18n="s4_title">تصميم واجهات وتجربة المستخدم UI/UX</h3>
+          <p data-i18n="s4_desc">نحوّل العمليات المعقدة إلى واجهات بصرية أنيقة وتجربة استخدام بديهية تعتمد على دراسة سلوك العميل وتضمن بقاء الزائر وسهولة وصوله لأهدافه.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>دراسة وتحليل رحلة العميل وسلوكه قبل التصميم.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>نماذج أولية تفاعلية (Wireframes & Prototypes).</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>نظام تصميم متكامل (Design System) موحد لكل المكونات.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>اختبارات قابلية الاستخدام لضمان أعلى مستويات السلاسة.</span></li>
+            </ul>
           </div>
 
-          <div class="service-actions">
-            <button class="btn btn-secondary btn-sm open-quote-modal-btn" data-service="إدارة الحملات الإعلانية على Google Ads" data-i18n="service_btn_quote">
-              طلب عرض سعر
-            </button>
-            <button class="btn btn-whatsapp btn-sm" onclick="openWhatsAppForService('إدارة الحملات الإعلانية على Google Ads')" data-i18n="service_btn_wa">
-              واتساب مباشر
-            </button>
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="تصميم واجهات وتجربة المستخدم UI/UX">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('تصميم واجهات وتجربة المستخدم UI/UX')">واتساب مباشر</button>
           </div>
-        </article>
+        </div>
+
+        <!-- 05: Custom Software & Dashboards -->
+        <div class="svc-card" data-reveal data-reveal-group="4">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </span>
+            <span class="svc-no">05</span>
+          </div>
+          <span class="svc-tag">برمجيات مفصلة خصيصاً لأتمتة أعمال منشأتك</span>
+          <h3 data-i18n="s5_title">تطوير الأنظمة والبرمجيات الخاصة ولوحات التحكم</h3>
+          <p data-i18n="s5_desc">حلول برمجية مخصصة للشركات لأتمتة العمليات اليومية وإدارة الأعمال، مثل أنظمة CRM و ERP ولوحات التحكم اللحظية لاتخاذ القرارات.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>هندسة برمجية مفصلة خصيصاً لدورة عمل منشأتك.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>صلاحيات دقيقة للموظفين مع حماية مشددة للبيانات.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تقارير بيانية وإحصائيات فورية تدعم الإدارة.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>واجهات برمجة تطبيقات (APIs) للربط مع المنصات الخارجية.</span></li>
+            </ul>
+          </div>
+
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="تطوير الأنظمة والبرمجيات الخاصة">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('تطوير الأنظمة والبرمجيات الخاصة')">واتساب مباشر</button>
+          </div>
+        </div>
+
+        <!-- 06: Maintenance -->
+        <div class="svc-card" data-reveal data-reveal-group="5">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </span>
+            <span class="svc-no">06</span>
+          </div>
+          <span class="svc-tag">حماية مستمرة وسرعة استجابة على مدار الساعة</span>
+          <h3 data-i18n="s6_title">صيانة المواقع وتحسين أدائها</h3>
+          <p data-i18n="s6_desc">نضمن بقاء منصتك الإلكترونية تعمل بأقصى سرعة واستقرار، مع التحديثات الأمنية الدورية، والنسخ الاحتياطي، وحل أي طوارئ تقنية فوراً.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>مراقبة مستمرة للأداء وسرعة الاستجابة 24/7.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>فحص أمني دوري وسد الثغرات وتحديث البرمجيات.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>نسخ احتياطي منتظم لقواعد البيانات والملفات.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>فريق دعم فني سريع الاستجابة للتعامل مع أي مشكلة.</span></li>
+            </ul>
+          </div>
+
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="صيانة المواقع وتحسين أدائها">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('صيانة المواقع وتحسين أدائها')">واتساب مباشر</button>
+          </div>
+        </div>
+
+        <!-- 07: SEO -->
+        <div class="svc-card" data-reveal data-reveal-group="6">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </span>
+            <span class="svc-no">07</span>
+          </div>
+          <span class="svc-tag">تصدر نتائج البحث الأولى في Google بالسعودية</span>
+          <h3 data-i18n="s7_title">تحسين محركات البحث SEO</h3>
+          <p data-i18n="s7_desc">نساعد موقعك ومتجرك على تصدر نتائج البحث الأولى في Google للكلمات المفتاحية الأكثر ربحية واستهدافاً للعملاء داخل المملكة العربية السعودية.</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تهيئة تقنية شاملة للموقع والروابط وخريطة السايت ماب.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>استهداف كلمات مفتاحية يطلبها الجمهور السعودي الفعلي.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تحسين المحتوى وتجربة التصفح لكسب ثقة خوارزميات جوجل.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>تقارير شهرية شفافة توضح تطور الترتيب وزيادة العملاء.</span></li>
+            </ul>
+          </div>
+
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="تحسين محركات البحث SEO">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('تحسين محركات البحث SEO')">واتساب مباشر</button>
+          </div>
+        </div>
+
+        <!-- 08: Google Ads -->
+        <div class="svc-card" data-reveal data-reveal-group="7">
+          <div class="svc-top">
+            <span class="svc-icon">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <span class="svc-no">08</span>
+          </div>
+          <span class="svc-tag">حملات مدروسة تصل لعميلك الجاهز للشراء</span>
+          <h3 data-i18n="s8_title">إعداد وإدارة الحملات الإعلانية على Google Ads</h3>
+          <p data-i18n="s8_desc">إدارة حملات إعلانية احترافية مدروسة على شبكة البحث ويوتيوب، تضمن وصولك للعميل المستعد للشراء مع مراقبة يومية لتعظيم العائد على الإنفاق (ROAS).</p>
+          
+          <div class="svc-deliverables">
+            <div class="svc-deliv-head">ما الذي ستحصل عليه:</div>
+            <ul class="svc-deliv-items">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>هيكلة احترافية تستهدف نية الشراء الحقيقية للعميل.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>كتابة نصوص إعلانية مقنعة واختبار نسخ متعددة A/B.</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>ضبط دقيق لتتبع التحويلات (Conversion Tracking).</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>إدارة الميزانية لتفادي الهدر وخفض تكلفة الاستحواذ.</span></li>
+            </ul>
+          </div>
+
+          <div class="svc-actions-row">
+            <button class="btn btn--primary open-quote-modal-btn" data-service="إدارة الحملات الإعلانية على Google Ads">طلب عرض سعر</button>
+            <button class="btn btn--wa" onclick="openWhatsAppForService('إدارة الحملات الإعلانية على Google Ads')">واتساب مباشر</button>
+          </div>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Interactive Project Scope Calculator -->
-  <section class="quote-calculator-section" id="calculator">
+  <!-- Section 3: Interactive Project Scope Calculator (Matching Site Snap Aesthetic) -->
+  <section class="section texture-grid" id="calculator">
     <div class="container">
-      <div class="section-header">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span data-i18n="nav_calc">حاسبة المشروع</span>
+      <div class="sec-head sec-head--center" data-reveal>
+        <div class="sec-head-main">
+          <span class="eyebrow"><span class="sec-index">02</span>حاسبة المشروع</span>
+          <h2 class="h-2">حدّد نطاق مشروعك واحصل على <span class="hl">تقدير فوري</span></h2>
+          <p class="sec-desc" data-i18n="calc_desc">اختر نوع المشروع والخصائص التي تحتاجها لنقوم بتجهيز خطة العمل المناسبة والتواصل معك لمناقشة التفاصيل وعرض السعر المخصص.</p>
         </div>
-        <h2 class="section-title" data-i18n="calc_title">حدّد نطاق مشروعك واحصل على تقدير فوري</h2>
-        <p class="section-desc" data-i18n="calc_desc">
-          اختر نوع المشروع والخصائص التي تحتاجها لنقوم بتجهيز خطة العمل المناسبة والتواصل معك لمناقشة التفاصيل وعرض السعر المخصص.
-        </p>
       </div>
 
-      <div class="calculator-card">
-        <!-- Step 1: Project Type -->
-        <div class="calc-step">
-          <div class="calc-step-title">
-            <span class="calc-step-num">1</span>
+      <div class="calc-card-box" data-reveal>
+        <!-- Step 1 -->
+        <div style="margin-bottom: 28px;">
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span style="width: 26px; height: 26px; border-radius: 50%; background: var(--primary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">1</span>
             <span data-i18n="calc_step1">1. اختر نوع المشروع الأساسي</span>
-          </div>
+          </h4>
 
-          <div class="project-type-options">
-            <label class="type-option-label active">
+          <div class="calc-opt-grid">
+            <label class="calc-opt-card active">
               <input type="radio" name="calc_project_type" value="ecommerce" checked>
-              <span class="type-option-title">متجر إلكتروني متكامل</span>
-              <span class="type-option-desc">بيع منتجات، بوابات دفع، وربط شحن</span>
+              <strong style="color: #FFF; font-size: 1rem;">متجر إلكتروني متكامل</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">بوابات دفع سعودية وربط شحن</span>
             </label>
 
-            <label class="type-option-label">
+            <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="website">
-              <span class="type-option-title">موقع شركات / تعريفي</span>
-              <span class="type-option-desc">واجهة للعلامة التجارية والخدمات</span>
+              <strong style="color: #FFF; font-size: 1rem;">موقع شركات / تعريفي</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">واجهة رسمية عصرية للعلامة</span>
             </label>
 
-            <label class="type-option-label">
+            <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="app">
-              <span class="type-option-title">تطبيق جوال (iOS & Android)</span>
-              <span class="type-option-desc">تطبيق للمستخدمين بمزايا مخصصة</span>
+              <strong style="color: #FFF; font-size: 1rem;">تطبيق جوال (iOS & Android)</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">تطبيق أصلي بهوية مخصصة</span>
             </label>
 
-            <label class="type-option-label">
+            <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="custom">
-              <span class="type-option-title">نظام برمجيات خاص / لوحة تحكم</span>
-              <span class="type-option-desc">أتمتة العمليات وإدارة الأعمال</span>
+              <strong style="color: #FFF; font-size: 1rem;">أنظمة خاصة ولوحات تحكم</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">أتمتة العمليات وإدارة المنشأة</span>
             </label>
 
-            <label class="type-option-label">
+            <label class="calc-opt-card">
               <input type="radio" name="calc_project_type" value="seo_ads">
-              <span class="type-option-title">SEO وحملات Google Ads</span>
-              <span class="type-option-desc">جلب عملاء جاهزين للشراء</span>
+              <strong style="color: #FFF; font-size: 1rem;">SEO وإعلانات Google</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">جلب عملاء مستهدفين بالشراء</span>
             </label>
           </div>
         </div>
 
-        <!-- Step 2: Features -->
-        <div class="calc-step">
-          <div class="calc-step-title">
-            <span class="calc-step-num">2</span>
+        <!-- Step 2 -->
+        <div style="margin-bottom: 28px;">
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span style="width: 26px; height: 26px; border-radius: 50%; background: var(--secondary); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">2</span>
             <span data-i18n="calc_step2">2. الميزات والخدمات الإضافية المطلوبة</span>
-          </div>
+          </h4>
 
-          <div class="features-options">
-            <label class="feature-check-label checked">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
+            <label class="calc-feat-label checked">
               <input type="checkbox" name="calc_feature" value="payments" checked>
               <span>بوابات دفع سعودية (مدى / Apple Pay)</span>
             </label>
-
-            <label class="feature-check-label">
+            <label class="calc-feat-label">
               <input type="checkbox" name="calc_feature" value="shipping">
               <span>ربط شركات الشحن والتوصيل</span>
             </label>
-
-            <label class="feature-check-label">
+            <label class="calc-feat-label">
               <input type="checkbox" name="calc_feature" value="dashboard">
               <span>لوحة تحكم إدارية مخصصة</span>
             </label>
-
-            <label class="feature-check-label checked">
+            <label class="calc-feat-label checked">
               <input type="checkbox" name="calc_feature" value="speed" checked>
-              <span>تحسين سرعة وأداء استثنائي</span>
+              <span>تحسين سرعة وأداء فائق</span>
             </label>
-
-            <label class="feature-check-label">
+            <label class="calc-feat-label">
               <input type="checkbox" name="calc_feature" value="seo">
               <span>تهيئة كاملة لمحركات البحث SEO</span>
             </label>
-
-            <label class="feature-check-label checked">
+            <label class="calc-feat-label checked">
               <input type="checkbox" name="calc_feature" value="responsive" checked>
               <span>تصميم متوافق بنسبة 100% مع الجوال</span>
             </label>
-
-            <label class="feature-check-label">
+            <label class="calc-feat-label">
               <input type="checkbox" name="calc_feature" value="security">
-              <span>حماية وتأمين متقدم وشهادات SSL</span>
+              <span>تأمين متقدم وشهادات SSL</span>
             </label>
-
-            <label class="feature-check-label">
+            <label class="calc-feat-label">
               <input type="checkbox" name="calc_feature" value="notifications">
               <span>نظام إشعارات وتنبيهات فورية</span>
             </label>
           </div>
         </div>
 
-        <!-- Step 3: Summary Box -->
-        <div class="calc-summary-box">
-          <div class="calc-summary-details">
-            <div class="calc-summary-title" id="calcSummaryType">متجر إلكتروني متكامل</div>
-            <div class="calc-summary-desc" id="calcSummaryFeaturesCount">3 ميزات مختارة</div>
+        <!-- Summary & Actions -->
+        <div style="background: var(--surface-2); border: 1px dashed var(--border-strong); border-radius: var(--r-md); padding: 22px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <div style="font-size: 1.15rem; font-weight: 700; color: #FFF;" id="calcSummaryType">متجر إلكتروني متكامل</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);" id="calcSummaryFeaturesCount">3 ميزات مختارة</div>
           </div>
-
-          <div class="calc-summary-actions">
-            <button class="btn btn-whatsapp btn-sm" id="calcBtnWhatsApp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-              </svg>
-              <span data-i18n="calc_summary_btn_wa">إرسال المواصفات عبر واتساب</span>
+          <div style="display: flex; gap: 12px;">
+            <button class="btn btn--wa btn--sm" id="calcBtnWhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>إرسال المواصفات عبر واتساب</span>
             </button>
-
-            <button class="btn btn-primary btn-sm" id="calcBtnQuote" data-i18n="calc_summary_btn_quote">
-              طلب عرض سعر رسمي
-            </button>
+            <button class="btn btn--primary btn--sm" id="calcBtnQuote">طلب عرض سعر رسمي</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Process Section -->
-  <section class="process-section" id="process">
+  <!-- Section 4: Work Process (Site Snap Methodology) -->
+  <section class="section section--alt" id="process">
     <div class="container">
-      <div class="section-header">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span data-i18n="nav_process">خطوات العمل</span>
-        </div>
-        <h2 class="section-title" data-i18n="process_title">منهجية عمل واضحة من الفكرة إلى الإطلاق</h2>
-        <p class="section-desc" data-i18n="process_desc">
-          نتبع خطوات منهجية مدروسة تضمن لك الشفافية التامة، وتسلّمك مشروعك بجودة عالية وفي الموعد المتفق عليه دون مفاجآت.
-        </p>
-      </div>
-
-      <div class="process-timeline">
-        <div class="process-card">
-          <div class="process-step-badge">01</div>
-          <h3 class="process-title" data-i18n="p1_title">1. دراسة وتحليل المتطلبات</h3>
-          <p class="process-desc" data-i18n="p1_desc">
-            نجلس معك ونستمع لأهداف مشروعك وجمهورك المستهدف لنضع وثيقة مواصفات فنية واضحة ومحددة.
+      <div class="about-wrap">
+        <div data-reveal="right">
+          <span class="eyebrow"><span class="sec-index">03</span>منهجية العمل</span>
+          <h2 class="h-2">خطوات واضحة تضمن <span class="hl">الشفافية والالتزام</span></h2>
+          <p class="lead" style="margin-block-start:1.1rem" data-i18n="process_desc">
+            نتبع خطوات منهجية مدروسة تضمن لك الشفافية التامة، وتسلّمك مشروعك بجودة عالية وفي الموعد المتفق عليه دون مفاجآت.
           </p>
-        </div>
 
-        <div class="process-card">
-          <div class="process-step-badge">02</div>
-          <h3 class="process-title" data-i18n="p2_title">2. هندسة وتخطيط الحل</h3>
-          <p class="process-desc" data-i18n="p2_desc">
-            تحديد أفضل التقنيات المناسبة، رسم هيكلية قواعد البيانات، وتوزيع مراحل التنفيذ الزمنية بدقة.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-step-badge">03</div>
-          <h3 class="process-title" data-i18n="p3_title">3. تصميم واجهات المستخدم UI/UX</h3>
-          <p class="process-desc" data-i18n="p3_desc">
-            رسم واجهات المشروع خطوة بخطوة ومشاركتها معك للتأكد من ملاءمتها لتطلعاتك قبل كتابة الكود.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-step-badge">04</div>
-          <h3 class="process-title" data-i18n="p4_title">4. البرمجة والتطوير الفعلي</h3>
-          <p class="process-desc" data-i18n="p4_desc">
-            كتابة كود برمجي نظيف وقوي وسريع مع مراعاة أعلى معايير الأمان وقابلية التوسع مستقبلاً.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-step-badge">05</div>
-          <h3 class="process-title" data-i18n="p5_title">5. الفحص وضمان الجودة (QA)</h3>
-          <p class="process-desc" data-i18n="p5_desc">
-            اختبار وظائف المشروع تحت ظروف استخدام مختلفة وعلى جميع مقاسات الشاشات لضمان انعدام الأخطاء.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-step-badge">06</div>
-          <h3 class="process-title" data-i18n="p6_title">6. الإطلاق والدعم المستمر</h3>
-          <p class="process-desc" data-i18n="p6_desc">
-            رفع المشروع على السيرفرات الرسمية، وتدريب فريقك على لوحة التحكم، مع توفير دعم فني دائم.
-          </p>
+          <ul class="about-points">
+            <li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span><strong>1. دراسة وتحليل المتطلبات:</strong> فهم أهداف مشروعك وجمهورك المستهدف بدقة.</span></li>
+            <li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span><strong>2. هندسة وتخطيط الحل:</strong> اختيار أنسب التقنيات ورسم هيكلية قواعد البيانات.</span></li>
+            <li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span><strong>3. تصميم واجهات UI/UX:</strong> نماذج بصرية أولية ومشاركتها معك قبل كتابة الكود.</span></li>
+            <li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span><strong>4. البرمجة والتطوير الفعلي:</strong> كود نظيف، سريع، وآمن قابل للتوسع مستقبلاً.</span></li>
+            <li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span><strong>5. الفحص وضمان الجودة (QA):</strong> اختبار شامل على كل الأجهزة والشبكات.</span></li>
+            <li><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5 12.5 4.5 4.5L19 7"/></svg><span><strong>6. الإطلاق والدعم المستمر:</strong> تسليم كامل الصلاحيات والدعم الفني بعد الإطلاق.</span></li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Us Section -->
-  <section class="why-section" id="why-us">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span data-i18n="nav_why">لماذا نحن</span>
-        </div>
-        <h2 class="section-title" data-i18n="why_title">لماذا يختار رواد الأعمال CODEXSORS؟</h2>
-        <p class="section-desc" data-i18n="why_desc">
-          نحن لسنا مجرد منفذين تقنيين، بل شركاء نجاح نستثمر خبراتنا لضمان تفوق مشروعك في السوق السعودي.
-        </p>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M16 18l6-6-6-6"/>
-              <path d="M8 6l-6 6 6 6"/>
-            </svg>
-          </div>
-          <h3 class="why-title" data-i18n="w1_title">تطوير مخصص بدون قوالب جاهزة</h3>
-          <p class="why-desc" data-i18n="w1_desc">
-            كل سطر برمجي يُكتب خصيصاً لخدمة أهداف عملك، مما يضمن سرعة فائقة وحماية من ثغرات القوالب المستهلكة.
-          </p>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
-            </svg>
-          </div>
-          <h3 class="why-title" data-i18n="w2_title">فهم عميق للسوق السعودي</h3>
-          <p class="why-desc" data-i18n="w2_desc">
-            ندرك متطلبات السوق المحلي واحتياجات المستهلك السعودي وتكامل المنصات مع بوابات الدفع والشحن المعتمدة.
-          </p>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-          </div>
-          <h3 class="why-title" data-i18n="w3_title">التزام كامل بالمواعيد والمخرجات</h3>
-          <p class="why-desc" data-i18n="w3_desc">
-            نعمل بخطط زمنية محددة وعقود واضحة تضمن تسليم كل مرحلة في موعدها الدقيق دون تسويف.
-          </p>
-        </div>
-
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-            </svg>
-          </div>
-          <h3 class="why-title" data-i18n="w4_title">أمان متقدم وحماية للبيانات</h3>
-          <p class="why-desc" data-i18n="w4_desc">
-            نطبق أفضل الممارسات البرمجية العالمية لحماية بياناتك وبيانات عملائك من أي تسريب أو هجمات.
-          </p>
+  <!-- Section 5: FAQ -->
+  <section class="section texture-grid" id="faq">
+    <div class="container" style="max-width: 860px;">
+      <div class="sec-head sec-head--center" data-reveal>
+        <div class="sec-head-main">
+          <span class="eyebrow"><span class="sec-index">04</span>الأسئلة الشائعة</span>
+          <h2 class="h-2">إجابات شفافة <span class="hl">لكل استفساراتك</span></h2>
+          <p class="sec-desc" data-i18n="faq_desc">إجابات مباشرة على أكثر الأسئلة التي تهم أصحاب المشروعات قبل بدء العمل معنا.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- FAQ Section -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span data-i18n="nav_faq">الأسئلة الشائعة</span>
-        </div>
-        <h2 class="section-title" data-i18n="faq_title">الأسئلة الأكثر شيوعاً</h2>
-        <p class="section-desc" data-i18n="faq_desc">
-          إجابات شفافة ومباشرة على أكثر الاستفسارات التي تهم أصحاب المشروعات قبل بدء العمل معنا.
-        </p>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question">
+      <div class="faq-list-box" data-reveal>
+        <div class="faq-box-item">
+          <button class="faq-box-btn">
             <span data-i18n="q1">كيف يتم تحديد تكلفة المشروع؟</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-i18n="a1">
+          <div class="faq-box-answer">
+            <div class="faq-box-answer-inner" data-i18n="a1">
               يتم تحديد التكلفة بناءً على دراسة دقيقة للمتطلبات الفنية، عدد الشاشات، الميزات المطلوبة، والأنظمة المراد ربطها. نقدم لكل عميل عرض سعر مخصص ومفصل يوضح كل بند دون أي تكاليف خفية.
             </div>
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question">
+        <div class="faq-box-item">
+          <button class="faq-box-btn">
             <span data-i18n="q2">كم تستغرق مدة تنفيذ وتسليم المشروع؟</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-i18n="a2">
+          <div class="faq-box-answer">
+            <div class="faq-box-answer-inner" data-i18n="a2">
               تعتمد المدة على حجم المشروع وطبيعته؛ فالمواقع التعريفية والمتاجر تستغرق عادة من 7 إلى 20 يوم عمل، بينما التطبيقات والأنظمة الخاصة تُحدد مدتها حسب جدول زمني مفصل يُعتمد قبل توقيع العقد.
             </div>
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question">
+        <div class="faq-box-item">
+          <button class="faq-box-btn">
             <span data-i18n="q3">هل يحصل العميل على حقوق ملكية الكود ولوحة تحكم كاملة؟</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-i18n="a3">
+          <div class="faq-box-answer">
+            <div class="faq-box-answer-inner" data-i18n="a3">
               نعم تماماً، عند تسليم المشروع واستيفاء بنود العقد، يحصل العميل على كافة صلاحيات لوحة التحكم وبيانات السيرفرات وتكون ملكية المنصة له بنسبة 100%.
             </div>
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question">
+        <div class="faq-box-item">
+          <button class="faq-box-btn">
             <span data-i18n="q4">هل تقدمون دعماً فنياً بعد تسليم المشروع؟</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner" data-i18n="a4">
+          <div class="faq-box-answer">
+            <div class="faq-box-answer-inner" data-i18n="a4">
               بالتأكيد، نوفر فترة ضمان ودعم فني مجاني بعد الإطلاق لضمان استقرار العمل وتدريب العميل على الإدارة، بالإضافة إلى باقات صيانة دورية متقدمة.
             </div>
           </div>
@@ -958,60 +640,54 @@
     </div>
   </section>
 
-  <!-- Contact & Lead Form Section -->
-  <section class="contact-section" id="contact">
+  <!-- Section 6: Contact & Quote Request Form -->
+  <section class="section section--alt" id="contact">
     <div class="container">
-      <div class="contact-wrapper">
-        <!-- Info Card -->
-        <div class="contact-info-card">
-          <div class="badge" style="margin-bottom: 20px;">
-            <span class="badge-dot"></span>
-            <span data-i18n="nav_contact">تواصل معنا</span>
-          </div>
-
-          <h2 class="contact-info-title" data-i18n="contact_title">جاهز لبدء مشروعك الرقمي؟</h2>
-          <p class="contact-info-desc" data-i18n="contact_desc">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 36px; align-items: start;">
+        
+        <!-- Info Column -->
+        <div data-reveal="right">
+          <span class="eyebrow"><span class="sec-index">05</span>تواصل معنا</span>
+          <h2 class="h-2" data-i18n="contact_title">جاهز لبدء مشروعك الرقمي؟</h2>
+          <p class="lead" style="margin-block: 1rem 1.8rem;" data-i18n="contact_desc">
             تواصل معنا مباشرة عبر واتساب أو املأ النموذج وسنقوم بدراسة متطلباتك والرد عليك بعرض سعر مخصص في أسرع وقت.
           </p>
 
-          <div class="contact-channels">
-            <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" class="channel-item">
-              <div class="channel-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-                </svg>
+          <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-md); padding: 22px; margin-bottom: 24px;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <span style="width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--wa-green); color: #FFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              </span>
+              <div>
+                <span style="font-size: 0.82rem; color: var(--text-muted);" data-i18n="contact_phone_label">رقم التواصل الرسمي عبر واتساب</span>
+                <div style="font-size: 1.2rem; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #FFF;">0542572634 (السعودية 🇸🇦)</div>
               </div>
-              <div class="channel-meta">
-                <h5 data-i18n="contact_phone_label">رقم التواصل الرسمي عبر واتساب</h5>
-                <p>0542572634 (السعودية)</p>
-              </div>
-            </a>
+            </div>
           </div>
 
-          <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+          <a class="btn btn--wa btn--lg" href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" style="width: 100%; text-align: center; justify-content: center;">
             <span data-i18n="hero_btn_whatsapp">محادثة فورية عبر واتساب</span>
           </a>
         </div>
 
-        <!-- Form Card -->
-        <div class="contact-form-card">
+        <!-- Form Column -->
+        <div style="background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--r-xl); padding: 36px; box-shadow: var(--shadow-md);" data-reveal="left">
           <form id="mainContactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_name">الاسم الكامل *</label>
-                <input type="text" name="client_name" class="form-control" placeholder="مثال: محمد القحطاني" required>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+              <div>
+                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_name">الاسم الكامل *</label>
+                <input type="text" name="client_name" class="codex-form-control" placeholder="مثال: تركي الراجحي" required>
               </div>
-
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_phone">رقم الجوال / الواتساب *</label>
-                <input type="tel" name="client_phone" class="form-control" placeholder="05XXXXXXXX" required>
+              <div>
+                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_phone">رقم الجوال / الواتساب *</label>
+                <input type="tel" name="client_phone" class="codex-form-control" placeholder="05XXXXXXXX" required>
               </div>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_service">الخدمة المطلوبة</label>
-                <select name="client_service" class="form-control">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+              <div>
+                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_service">الخدمة المطلوبة</label>
+                <select name="client_service" class="codex-form-control">
                   <option value="إنشاء وتصميم المتاجر الإلكترونية">إنشاء وتصميم المتاجر الإلكترونية</option>
                   <option value="تصميم وتطوير المواقع الإلكترونية">تصميم وتطوير المواقع الإلكترونية</option>
                   <option value="تطوير تطبيقات Android و iOS">تطوير تطبيقات Android و iOS</option>
@@ -1022,10 +698,9 @@
                   <option value="إدارة الحملات الإعلانية على Google Ads">إدارة الحملات الإعلانية على Google Ads</option>
                 </select>
               </div>
-
-              <div class="form-group">
-                <label class="form-label" data-i18n="form_budget">الميزانية المتوقعة (اختياري)</label>
-                <select name="client_budget" class="form-control">
+              <div>
+                <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_budget">الميزانية المتوقعة</label>
+                <select name="client_budget" class="codex-form-control">
                   <option value="غير محدد">يرجى تحديد الأنسب حسب العرض</option>
                   <option value="أقل من 5,000 ريال">أقل من 5,000 ريال</option>
                   <option value="5,000 - 15,000 ريال">5,000 - 15,000 ريال</option>
@@ -1035,95 +710,94 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label" data-i18n="form_details">نبذة عن فكرة المشروع ومتطلباته</label>
-              <textarea name="client_details" class="form-control" placeholder="اكتب وصفاً موجزاً للمشروع وأي متطلبات خاصة ترغب بها..."></textarea>
+            <div style="margin-bottom: 20px;">
+              <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;" data-i18n="form_details">تفاصيل المشروع والمتطلبات</label>
+              <textarea name="client_details" class="codex-form-control" style="min-height: 100px; resize: vertical;" placeholder="اكتب وصفاً موجزاً للمشروع وأي متطلبات خاصة ترغب بها..."></textarea>
             </div>
 
             <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-              <button type="submit" class="btn btn-primary" style="flex: 1;" data-i18n="form_submit">
+              <button type="submit" class="btn btn--primary" style="flex: 1; text-align: center; justify-content: center;" data-i18n="form_submit">
                 إرسال طلب عرض السعر
               </button>
-              <button type="button" class="btn btn-whatsapp" id="mainFormWhatsAppBtn" style="flex: 1;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-                </svg>
-                <span data-i18n="form_wa_btn">إرسال البيانات مباشرة عبر واتساب</span>
+              <button type="button" class="btn btn--wa" id="mainFormWhatsAppBtn" style="flex: 1; text-align: center; justify-content: center;">
+                <span data-i18n="form_wa_btn">إرسال البيانات عبر واتساب</span>
               </button>
             </div>
           </form>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="#hero" class="nav-brand" style="margin-bottom: 8px;">
-            <div class="brand-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
-              </svg>
-            </div>
-            <div class="brand-text">
-              <span class="brand-title">CODEXSORS</span>
-              <span class="brand-subtitle">Build Your Digital Future</span>
-            </div>
+  <!-- Site Snap Exact Footer & CTA Section -->
+  <footer class="site-footer sf">
+    <span class="sf-glow" aria-hidden="true"></span>
+    <span class="sf-grid-tex" aria-hidden="true"></span>
+
+    <div class="sf-wrap">
+      <!-- Call to Action (Exact Site Snap sf-cta) -->
+      <section class="sf-cta" aria-labelledby="sf-cta-t">
+        <div class="sf-cta__txt">
+          <h2 id="sf-cta-t">جاهز تبدأ مشروعك الرقمي؟</h2>
+          <p>خلينا نحول فكرتك لحل رقمي احترافي يصنع الفرق.</p>
+        </div>
+        <div class="sf-cta__btns">
+          <a class="sf-btn sf-btn--main open-quote-modal-btn" href="#contact">
+            ابدأ مشروعك
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>
           </a>
-          <p class="footer-brand-desc" data-i18n="footer_about">
+          <a class="sf-btn sf-btn--ghost" href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            تواصل عبر واتساب
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer Columns -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 36px; padding: 40px 0 30px; border-top: 1px solid var(--border);">
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 1.3rem; margin-bottom: 12px; font-family: 'Space Grotesk', sans-serif;">
+            <span style="color: #FFF;">CODEX<span style="color: var(--primary);">SORS</span></span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;" data-i18n="footer_about">
             CODEXSORS — علامة متخصصة في تقديم الحلول والخدمات الرقمية للمؤسسات والشركات والمتاجر والمشروعات الناشئة في المملكة العربية السعودية.
           </p>
         </div>
 
         <div>
-          <h4 class="footer-col-title" data-i18n="footer_quick_links">روابط سريعة</h4>
-          <ul class="footer-links">
-            <li><a href="#hero" data-i18n="nav_home">الرئيسية</a></li>
-            <li><a href="#services" data-i18n="nav_services">خدماتنا</a></li>
-            <li><a href="#calculator" data-i18n="nav_calc">حاسبة المشروع</a></li>
-            <li><a href="#process" data-i18n="nav_process">خطوات العمل</a></li>
-            <li><a href="#why-us" data-i18n="nav_why">لماذا نحن</a></li>
-            <li><a href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
+          <h4 style="font-size: 1rem; font-weight: 700; color: #FFF; margin-bottom: 14px;" data-i18n="footer_quick_links">روابط سريعة</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+            <li><a href="#hero" style="color: var(--text-secondary);" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#whyus" style="color: var(--text-secondary);" data-i18n="nav_why">لماذا نحن</a></li>
+            <li><a href="#services" style="color: var(--text-secondary);" data-i18n="nav_services">خدماتنا</a></li>
+            <li><a href="#calculator" style="color: var(--text-secondary);" data-i18n="nav_calc">حاسبة المشروع</a></li>
+            <li><a href="#faq" style="color: var(--text-secondary);" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title" data-i18n="footer_services">الخدمات</h4>
-          <ul class="footer-links">
-            <li><a href="#services">المتاجر الإلكترونية</a></li>
-            <li><a href="#services">المواقع والمنصات</a></li>
-            <li><a href="#services">تطبيقات الجوال</a></li>
-            <li><a href="#services">تصميم UI/UX</a></li>
-            <li><a href="#services">الأنظمة الخاصة</a></li>
-            <li><a href="#services">تحسين SEO</a></li>
+          <h4 style="font-size: 1rem; font-weight: 700; color: #FFF; margin-bottom: 14px;" data-i18n="footer_services">الخدمات</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+            <li><a href="#services" style="color: var(--text-secondary);">المتاجر الإلكترونية</a></li>
+            <li><a href="#services" style="color: var(--text-secondary);">المواقع والمنصات</a></li>
+            <li><a href="#services" style="color: var(--text-secondary);">تطبيقات الجوال</a></li>
+            <li><a href="#services" style="color: var(--text-secondary);">تصميم UI/UX</a></li>
+            <li><a href="#services" style="color: var(--text-secondary);">الأنظمة البرمجية الخاصة</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title" data-i18n="footer_contact">قنوات التواصل</h4>
-          <ul class="footer-links">
-            <li>
-              <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer">
-                واتساب: 0542572634
-              </a>
-            </li>
-            <li>
-              <span>الموقع الرسمي: codexsors.com</span>
-            </li>
-            <li>
-              <a href="admin.html" style="color: var(--accent-cyan); font-weight: 600;" data-i18n="footer_admin">
-                ⚙️ لوحة الإدارة (Admin)
-              </a>
-            </li>
+          <h4 style="font-size: 1rem; font-weight: 700; color: #FFF; margin-bottom: 14px;" data-i18n="footer_contact">قنوات التواصل</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+            <li><a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" style="color: var(--wa-green); font-weight: 600;">واتساب: 0542572634</a></li>
+            <li style="color: var(--text-muted);">الموقع: codexsors.com</li>
+            <li><a href="admin.html" style="color: var(--secondary); font-weight: 600;" data-i18n="footer_admin">⚙️ لوحة الإدارة (Admin)</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div style="border-top: 1px solid var(--border); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: var(--text-faint);">
         <span data-i18n="footer_rights">جميع الحقوق محفوظة لشركة CODEXSORS © 2026</span>
         <span>السوق المستهدف: المملكة العربية السعودية 🇸🇦</span>
       </div>
@@ -1131,50 +805,39 @@
   </footer>
 
   <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="تواصل عبر واتساب">
-    <div class="floating-whatsapp-pulse"></div>
-    <div class="floating-whatsapp-icon">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-      </svg>
-    </div>
+  <a href="https://wa.me/966542572634" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="تواصل عبر واتساب">
+    <div class="floating-wa-pulse"></div>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+    </svg>
     <span data-i18n="hero_btn_whatsapp">تواصل عبر واتساب</span>
   </a>
 
   <!-- Quick Quote Modal Dialog -->
-  <div class="modal-overlay" id="quoteModalOverlay">
-    <div class="modal-container">
-      <button class="modal-close" id="modalCloseBtn" aria-label="إغلاق">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"/>
-          <line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
+  <div class="codex-modal-overlay" id="quoteModalOverlay">
+    <div class="codex-modal-box">
+      <button class="codex-modal-close" id="modalCloseBtn" aria-label="إغلاق">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
 
-      <div class="badge" style="margin-bottom: 12px;">
-        <span class="badge-dot"></span>
-        <span>طلب عرض سعر مشروع</span>
-      </div>
-
-      <h3 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 8px;">ابدأ مشروعك مع CODEXSORS</h3>
-      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 24px;">
-        املأ البيانات وسيقوم فريقنا بدراسة متطلبات مشروعك وتجهيز خطة العمل المناسبة.
-      </p>
+      <span class="hero-badge" style="margin-bottom: 12px;"><i class="pulse"></i>طلب عرض سعر مشروع</span>
+      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 6px; color: #FFF;">ابدأ مشروعك مع CODEXSORS</h3>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 24px;">املأ البيانات وسيقوم فريقنا بدراسة المتطلبات والرد عليك بعرض سعر مخصص في أسرع وقت.</p>
 
       <form id="modalQuoteForm">
-        <div class="form-group">
-          <label class="form-label">الاسم الكامل *</label>
-          <input type="text" name="client_name" class="form-control" placeholder="مثال: عبدالله الشمري" required>
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">الاسم الكامل *</label>
+          <input type="text" name="client_name" class="codex-form-control" placeholder="مثال: فيصل الغامدي" required>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">رقم الجوال / الواتساب *</label>
-          <input type="tel" name="client_phone" class="form-control" placeholder="05XXXXXXXX" required>
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">رقم الجوال / الواتساب *</label>
+          <input type="tel" name="client_phone" class="codex-form-control" placeholder="05XXXXXXXX" required>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">نوع الخدمة المطلوبة</label>
-          <select name="client_service" id="modalFormService" class="form-control">
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">نوع الخدمة المطلوبة</label>
+          <select name="client_service" id="modalFormService" class="codex-form-control">
             <option value="إنشاء وتصميم المتاجر الإلكترونية">إنشاء وتصميم المتاجر الإلكترونية</option>
             <option value="تصميم وتطوير المواقع الإلكترونية">تصميم وتطوير المواقع الإلكترونية</option>
             <option value="تطوير تطبيقات Android و iOS">تطوير تطبيقات Android و iOS</option>
@@ -1186,9 +849,9 @@
           </select>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">الميزانية المتوقعة للمشروع</label>
-          <select name="client_budget" class="form-control">
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">الميزانية التقديرية</label>
+          <select name="client_budget" class="codex-form-control">
             <option value="غير محدد">يرجى تحديد الأنسب حسب العرض</option>
             <option value="أقل من 5,000 ريال">أقل من 5,000 ريال</option>
             <option value="5,000 - 15,000 ريال">5,000 - 15,000 ريال</option>
@@ -1197,25 +860,22 @@
           </select>
         </div>
 
-        <div class="form-group">
-          <label class="form-label">تفاصيل المشروع والمتطلبات</label>
-          <textarea name="client_details" id="modalFormDetails" class="form-control" placeholder="وضح باختصار ماذا تريد في مشروعك..."></textarea>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px;">تفاصيل المشروع</label>
+          <textarea name="client_details" id="modalFormDetails" class="codex-form-control" style="min-height: 90px; resize: vertical;" placeholder="وضح باختصار ماذا تريد في مشروعك..."></textarea>
         </div>
 
-        <div style="display: flex; gap: 12px; margin-top: 10px;">
-          <button type="submit" class="btn btn-primary" style="flex: 1;">
-            إرسال الطلب
-          </button>
-          <button type="button" class="btn btn-whatsapp" id="modalFormWhatsAppBtn" style="flex: 1;">
-            إرسال عبر واتساب
-          </button>
+        <div style="display: flex; gap: 12px;">
+          <button type="submit" class="btn btn--primary" style="flex: 1; text-align: center; justify-content: center;">إرسال الطلب</button>
+          <button type="button" class="btn btn--wa" id="modalFormWhatsAppBtn" style="flex: 1; text-align: center; justify-content: center;">إرسال عبر واتساب</button>
         </div>
       </form>
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Scripts: i18n + Core Interactive Engine + Site Snap Animations -->
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>

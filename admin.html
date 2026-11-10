@@ -8,21 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/codexsors-addons.css">
 
   <style>
-    .admin-body {
-      background: #07080D;
+    body {
+      background: var(--background);
       min-height: 100vh;
       padding: 40px 0;
-    }
-    .admin-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 32px;
-      flex-wrap: wrap;
-      gap: 16px;
+      color: var(--text-primary);
+      font-family: 'IBM Plex Sans Arabic', sans-serif;
     }
     .admin-stats-grid {
       display: grid;
@@ -31,19 +27,19 @@
       margin-bottom: 32px;
     }
     .stat-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      padding: 22px;
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
     .stat-val {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 800;
-      color: var(--accent-cyan);
-      font-family: var(--font-en);
+      color: var(--primary);
+      font-family: 'Space Grotesk', sans-serif;
     }
     .stat-label {
       font-size: 0.88rem;
@@ -57,20 +53,12 @@
       margin-bottom: 24px;
       flex-wrap: wrap;
     }
-    .search-input {
-      padding: 10px 16px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-sm);
-      color: #FFF;
-      min-width: 260px;
-    }
     .table-container {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--r-lg);
       overflow-x: auto;
-      box-shadow: var(--shadow-card);
+      box-shadow: var(--shadow-md);
     }
     table.leads-table {
       width: 100%;
@@ -79,37 +67,25 @@
       font-size: 0.92rem;
     }
     table.leads-table th {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--surface-2);
       padding: 16px 20px;
       color: var(--text-muted);
       font-weight: 600;
-      border-bottom: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border);
     }
     table.leads-table td {
       padding: 16px 20px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid var(--border);
       color: var(--text-primary);
       vertical-align: middle;
     }
     table.leads-table tr:hover td {
-      background: rgba(255, 255, 255, 0.02);
+      background: var(--surface-2);
     }
-    .status-badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-    .status-new { background: rgba(99, 102, 241, 0.2); color: #818CF8; border: 1px solid rgba(99, 102, 241, 0.4); }
-    .status-contacted { background: rgba(6, 182, 212, 0.2); color: #22D3EE; border: 1px solid rgba(6, 182, 212, 0.4); }
-    .status-closed { background: rgba(34, 197, 94, 0.2); color: #4ADE80; border: 1px solid rgba(34, 197, 94, 0.4); }
-    
-    /* Login Lock Screen */
     .lock-screen {
       position: fixed;
       inset: 0;
-      background: #07080D;
+      background: var(--background);
       z-index: 9999;
       display: flex;
       align-items: center;
@@ -117,36 +93,36 @@
       padding: 20px;
     }
     .lock-box {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-hover);
-      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--r-xl);
       padding: 40px;
       max-width: 420px;
       width: 100%;
       text-align: center;
-      box-shadow: var(--shadow-glow);
+      box-shadow: var(--shadow-lg);
     }
   </style>
 </head>
-<body class="admin-body">
+<body>
 
   <!-- Lock Screen PIN Protection -->
   <div class="lock-screen" id="adminLockScreen">
     <div class="lock-box">
-      <div class="brand-icon" style="margin: 0 auto 16px;">
+      <div style="width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--primary); color: #FFF; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
           <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
         </svg>
       </div>
-      <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 6px;">لوحة تحكم CODEXSORS</h3>
+      <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 6px; color: #FFF;">لوحة تحكم CODEXSORS</h3>
       <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 24px;">
         أدخل رمز المرور السري للدخول إلى إدارة الطلبات
       </p>
 
       <form id="adminLoginForm">
-        <input type="password" id="adminPinInput" class="form-control" placeholder="رمز المرور (الافتراضي: 2026)" style="text-align: center; font-size: 1.2rem; letter-spacing: 0.2em; margin-bottom: 16px;" required autofocus>
-        <button type="submit" class="btn btn-primary" style="width: 100%;">
+        <input type="password" id="adminPinInput" class="codex-form-control" placeholder="رمز المرور (الافتراضي: 2026)" style="text-align: center; font-size: 1.2rem; letter-spacing: 0.2em; margin-bottom: 16px;" required autofocus>
+        <button type="submit" class="btn btn--primary" style="width: 100%; text-align: center; justify-content: center;">
           تسجيل الدخول
         </button>
       </form>
@@ -155,20 +131,17 @@
 
   <!-- Main Dashboard Container -->
   <div class="container" id="adminMainContent" style="display: none;">
-    <header class="admin-header">
+    <header style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; flex-wrap: wrap; gap: 16px;">
       <div>
-        <div class="badge" style="margin-bottom: 8px;">
-          <span class="badge-dot"></span>
-          <span>CODEXSORS CRM & Leads</span>
-        </div>
-        <h1 style="font-size: 1.8rem; font-weight: 800;">إدارة طلبات المشروعات وعروض الأسعار</h1>
+        <p class="hero-badge" style="margin-bottom: 8px;"><i class="pulse"></i>CODEXSORS CRM</p>
+        <h1 style="font-size: 1.8rem; font-weight: 800; color: #FFF;">إدارة طلبات المشروعات وعروض الأسعار</h1>
       </div>
 
       <div style="display: flex; gap: 12px; align-items: center;">
-        <a href="index.html" class="btn btn-secondary btn-sm">
+        <a href="index.html" class="btn btn--ghost btn--sm">
           ← العودة للموقع
         </a>
-        <button class="btn btn-primary btn-sm" id="btnExportCSV">
+        <button class="btn btn--primary btn--sm" id="btnExportCSV">
           تصدير إلى Excel / CSV
         </button>
       </div>
@@ -181,31 +154,31 @@
         <span class="stat-label">إجمالي الطلبات المستلمة</span>
       </div>
       <div class="stat-card">
-        <span class="stat-val" id="statNewLeads" style="color: #818CF8;">0</span>
+        <span class="stat-val" id="statNewLeads" style="color: var(--primary);">0</span>
         <span class="stat-label">طلبات جديدة</span>
       </div>
       <div class="stat-card">
-        <span class="stat-val" id="statContactedLeads" style="color: #22D3EE;">0</span>
+        <span class="stat-val" id="statContactedLeads" style="color: var(--secondary);">0</span>
         <span class="stat-label">تم التواصل معهم</span>
       </div>
       <div class="stat-card">
-        <span class="stat-val" id="statClosedLeads" style="color: #4ADE80;">0</span>
+        <span class="stat-val" id="statClosedLeads" style="color: var(--wa-green);">0</span>
         <span class="stat-label">مشروعات مكتملة</span>
       </div>
     </div>
 
     <!-- Controls -->
     <div class="admin-controls">
-      <input type="text" id="adminSearchInput" class="search-input" placeholder="بحث بالاسم، الجوال، أو الخدمة...">
+      <input type="text" id="adminSearchInput" class="codex-form-control" style="max-width: 300px;" placeholder="بحث بالاسم، الجوال، أو الخدمة...">
       
       <div style="display: flex; gap: 10px;">
-        <select id="adminStatusFilter" class="search-input" style="min-width: 160px;">
+        <select id="adminStatusFilter" class="codex-form-control" style="width: auto;">
           <option value="all">كل الحالات</option>
           <option value="new">جديد</option>
           <option value="contacted">تم التواصل</option>
           <option value="closed">مكتمل</option>
         </select>
-        <button class="btn btn-secondary btn-sm" id="btnClearAllLeads" style="color: #F87171;">
+        <button class="btn btn--ghost btn--sm" id="btnClearAllLeads" style="color: #F87171;">
           مسح الكل
         </button>
       </div>

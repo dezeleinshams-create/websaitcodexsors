@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E111A"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A29"/>
+      <stop offset="100%" stop-color="#FF5100"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A6EFF"/>
+      <stop offset="100%" stop-color="#254EDB"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with smooth rounded corners -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="506" height="506" x="3" y="3" rx="125" fill="none" stroke="#FF6A1A" stroke-width="6" stroke-opacity="0.35"/>
+
+  <!-- Glowing accent orb in corner -->
+  <circle cx="430" cy="82" r="28" fill="url(#primaryGrad)" filter="url(#glow)" opacity="0.8"/>
+
+  <!-- Modern CS Monogram -->
+  <g font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" text-anchor="middle" dominant-baseline="central">
+    <!-- C Letter (Orange) -->
+    <text x="200" y="270" font-size="240" fill="url(#primaryGrad)" filter="url(#glow)">C</text>
+    <!-- S Letter (White / Blue Tint) -->
+    <text x="325" y="270" font-size="240" fill="#FFFFFF">S</text>
+  </g>
+
+  <!-- High-tech code dots accent -->
+  <circle cx="160" cy="400" r="10" fill="#3A6EFF"/>
+  <circle cx="200" cy="400" r="10" fill="#FF6A1A"/>
+  <circle cx="240" cy="400" r="10" fill="#FFFFFF" opacity="0.8"/>
+  <line x1="270" y1="400" x2="352" y2="400" stroke="#3A6EFF" stroke-width="8" stroke-linecap="round"/>
+</svg>
